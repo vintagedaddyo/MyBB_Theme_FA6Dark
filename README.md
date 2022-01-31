@@ -16,9 +16,13 @@ FA6Dark v1.1
 » Installation:
 
 1.) After downloading the Theme unpack it (with 7-Zip for example)
+
 2.) Upload the contents of "Upload" into your forums main directory.
+
 3.) Go to the Admin Control Panel under Themes > Import
+
 4.) Search for the XML File titled "FA6Dark-theme.xml" in the theme folder found on your computer and click the Button "Import Theme" this will upload the file from your computer to your forum.
+
 5.) Now have fun with your forum!
 
 FA6Dark v1.1
@@ -34,5 +38,7 @@ FA6Dark v1.1
 History:
 
 01/30/2022 - Theme .xml version 1.1 file created for mybb 1.8.29 usage
+
 01/30/2022 - Theme .xml version 1.0 file created for mybb 1.8.29 usage
+
 01/30/2022 — Theme initial conversion from FA5 to FA6 creation
