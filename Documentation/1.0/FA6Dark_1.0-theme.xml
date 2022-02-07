@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme name="FA6Dark 1.0" version="1829">
 	<properties>
-		<templateset><![CDATA[3]]></templateset>
+		<templateset><![CDATA[32]]></templateset>
 		<editortheme><![CDATA[FA6-Dark.css]]></editortheme>
 		<imgdir><![CDATA[themes/FA6Dark]]></imgdir>
 		<logo><![CDATA[themes/FA6Dark/logo.png]]></logo>
@@ -113,6 +113,7 @@
 .post.classic > .post_content {
    padding:  1% 1% 5px 1% !important;
 }
+		
 		
 		
 		
@@ -2834,6 +2835,7 @@ div.jqi .jqisubstate .jqibuttons button{
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="css3.css" version="1829"><![CDATA[/*
@@ -2996,6 +2998,508 @@ button, input.button, input.textbox, input.invalid_field, input.valid_field, sel
     -webkit-border-radius: 3px;
     border-radius: 3px
 }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_dawn.css" attachedto="dawn" version="1829"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_dawn.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.0
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #d56c2c;
+}
+
+input[type=checkbox]:checked:before {
+    color: #d56c2c;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #d56c2c;
+	-webkit-box-shadow: inset 0 1px 1px rgb(213,108,44), 0 0 8px rgba(213,108,44, 0.8);
+	box-shadow: inset 0 1px 1px rgba(213,108,44, 0.8), 0 0 8px rgba(213,108,44, 0.8);
+}
+
+input.login {
+	border: 5px solid #d56c2c;
+
+}
+
+input.login:hover {
+	background: #d56c2c;
+}
+
+i.lostpwd {
+   color: #d56c2c;
+}
+
+i.printer {
+	color: #d56c2c;
+}
+
+i.sendto {
+	color: #d56c2c;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #d56c2c;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #d56c2c  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #d56c2c  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #d56c2c  !important;
+}
+
+.usercp_nav_item::before {
+	color: #d56c2c  !important;
+}
+
+.modcp_nav_item:before{
+    color: #d56c2c  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #d56c2c  !important;
+}
+
+i.panel-modcp {
+	color: #d56c2c  !important;
+}
+
+i.panel-admincp {
+	color: #d56c2c  !important;
+}
+
+.sharethread a:link {
+	color: #d56c2c !important;
+}
+
+.sharethread a:visited {
+	color: #d56c2c !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #d56c2c !important;
+}
+
+.progress {
+	background: #d56c2c  url('themes/FA6Dark/colors/dawn_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #d56c2c !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #d56c2c !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #d56c2c;
+}
+
+#logo {
+	background: #d56c2c url(themes/FA6Dark/colors/dawn_header.png) top left repeat-x;
+	border-bottom: 1px solid #011929;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #d56c2c;
+}
+
+.forum_on {
+color: #d56c2c;
+}
+
+.subforum_minion {
+	color: #d56c2c;
+}
+
+.thead {
+	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
+	border-bottom: 1px solid #9a4e20;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #9a4e20;
+}
+
+.popup_menu .popup_item:hover {
+	background: #f2a555;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #f2a555;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #f2a555;
+	color: #fff;
+	border-color: #9a4e20;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_calm.css" attachedto="calm" version="1829"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_calm.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.0
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #48715b;
+}
+
+input[type=checkbox]:checked:before {
+    color: #48715b;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #48715b;
+	-webkit-box-shadow: inset 0 1px 1px rgb(72,113,91), 0 0 8px rgba(72,113,91, 0.8);
+	box-shadow: inset 0 1px 1px rgba(72,113,91, 0.8), 0 0 8px rgba(72,113,91, 0.8);
+}
+
+input.login {
+	border: 5px solid #48715b;
+
+}
+
+input.login:hover {
+	background: #48715b;
+}
+
+i.lostpwd {
+   color: #48715b;
+}
+
+i.printer {
+	color: #48715b;
+}
+
+i.sendto {
+	color: #48715b;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #48715b;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #48715b !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #48715b !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #48715b !important;
+}
+
+.usercp_nav_item::before {
+	color: #48715b !important;
+}
+
+.modcp_nav_item:before{
+    color: #48715b !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #48715b !important;
+}
+
+i.panel-modcp {
+	color: #48715b !important;
+}
+
+i.panel-admincp {
+	color: #48715b !important;
+}
+
+.sharethread a:link {
+	color: #48715b !important;
+}
+
+.sharethread a:visited {
+	color: #48715b !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #385947 !important;
+}
+
+.progress {
+	background: #385947  url('themes/FA6Dark/colors/calm_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #48715b !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #48715b !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #48715b;
+}
+
+#logo {
+	background: #385947 url(themes/FA6Dark/colors/calm_header.png) top left repeat-x;
+	border-bottom: 1px solid #263c30;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #385947;
+}
+
+#panel .lower a:hover{
+    color: #385947;
+}
+
+.forum_on {
+color: #385947;
+}
+
+.subforum_minion {
+	color: #385947;
+}
+
+.thead {
+	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
+	color: #ffffff;
+	border-bottom: 1px solid #263c30;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #263c30;
+}
+
+.popup_menu .popup_item:hover {
+	background: #48715b;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #48715b;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #48715b;
+	color: #fff;
+	border-color: #263c30;
+}
+
+
+		
 		
 		
 		
@@ -3252,6 +3756,7 @@ color: #4a3b2f;
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="showthread.css" attachedto="showthread.php" version="1829"><![CDATA[/*
@@ -3357,6 +3862,7 @@ ul.thread_tools li.poll:after {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1829"><![CDATA[/*
@@ -3447,6 +3953,7 @@ ul.thread_tools li.poll:after {
      text-align: center;
      margin:0 auto;
 }
+		
 		
 		
 		
@@ -3857,6 +4364,7 @@ ul.thread_tools li.poll:after {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1829"><![CDATA[/*
@@ -4149,6 +4657,7 @@ td[class^=trow]{
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="modcp.css" attachedto="modcp.php" version="1829"><![CDATA[/*
@@ -4265,6 +4774,7 @@ td[class^=trow]{
 	border: 1px solid #ccc;
 	text-decoration: none;
 }
+		
 		
 		
 		
@@ -4528,6 +5038,7 @@ color: #ffdd4d;
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="color_twilight.css" attachedto="twilight" version="1829"><![CDATA[/*
@@ -4766,6 +5277,7 @@ color: #A0A0A0;
 }
 
 
+		
 		
 		
 		
@@ -5022,6 +5534,7 @@ color: #1e6365;
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="color_flame.css" attachedto="flame" version="1829"><![CDATA[/*
@@ -5258,6 +5771,7 @@ color: #750000;
 }
 
 
+		
 		
 		
 		
@@ -5514,6 +6028,7 @@ color: #386e21;
 		
 		
 		
+		
 		]]>
 		</stylesheet>
 		<stylesheet name="color_night.css" attachedto="night" version="1829"><![CDATA[/*
@@ -5752,6 +6267,7 @@ color: #A0A0A0;
 }
 
 
+		
 		
 		
 		
@@ -6093,504 +6609,6 @@ color: #A0A0A0;
 		
 		
 		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_calm.css" attachedto="calm" version="1829"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_calm.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.0
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #48715b;
-}
-
-input[type=checkbox]:checked:before {
-    color: #48715b;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #48715b;
-	-webkit-box-shadow: inset 0 1px 1px rgb(72,113,91), 0 0 8px rgba(72,113,91, 0.8);
-	box-shadow: inset 0 1px 1px rgba(72,113,91, 0.8), 0 0 8px rgba(72,113,91, 0.8);
-}
-
-input.login {
-	border: 5px solid #48715b;
-
-}
-
-input.login:hover {
-	background: #48715b;
-}
-
-i.lostpwd {
-   color: #48715b;
-}
-
-i.printer {
-	color: #48715b;
-}
-
-i.sendto {
-	color: #48715b;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #48715b;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #48715b !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #48715b !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #48715b !important;
-}
-
-.usercp_nav_item::before {
-	color: #48715b !important;
-}
-
-.modcp_nav_item:before{
-    color: #48715b !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #48715b !important;
-}
-
-i.panel-modcp {
-	color: #48715b !important;
-}
-
-i.panel-admincp {
-	color: #48715b !important;
-}
-
-.sharethread a:link {
-	color: #48715b !important;
-}
-
-.sharethread a:visited {
-	color: #48715b !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #385947 !important;
-}
-
-.progress {
-	background: #385947  url('themes/FA6Dark/colors/calm_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #48715b !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #48715b !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #48715b;
-}
-
-#logo {
-	background: #385947 url(themes/FA6Dark/colors/calm_header.png) top left repeat-x;
-	border-bottom: 1px solid #263c30;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #385947;
-}
-
-#panel .lower a:hover{
-    color: #385947;
-}
-
-.forum_on {
-color: #385947;
-}
-
-.subforum_minion {
-	color: #385947;
-}
-
-.thead {
-	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
-	color: #ffffff;
-	border-bottom: 1px solid #263c30;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #263c30;
-}
-
-.popup_menu .popup_item:hover {
-	background: #48715b;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #48715b;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #48715b;
-	color: #fff;
-	border-color: #263c30;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_dawn.css" attachedto="dawn" version="1829"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_dawn.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.0
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #d56c2c;
-}
-
-input[type=checkbox]:checked:before {
-    color: #d56c2c;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #d56c2c;
-	-webkit-box-shadow: inset 0 1px 1px rgb(213,108,44), 0 0 8px rgba(213,108,44, 0.8);
-	box-shadow: inset 0 1px 1px rgba(213,108,44, 0.8), 0 0 8px rgba(213,108,44, 0.8);
-}
-
-input.login {
-	border: 5px solid #d56c2c;
-
-}
-
-input.login:hover {
-	background: #d56c2c;
-}
-
-i.lostpwd {
-   color: #d56c2c;
-}
-
-i.printer {
-	color: #d56c2c;
-}
-
-i.sendto {
-	color: #d56c2c;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #d56c2c;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #d56c2c  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #d56c2c  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #d56c2c  !important;
-}
-
-.usercp_nav_item::before {
-	color: #d56c2c  !important;
-}
-
-.modcp_nav_item:before{
-    color: #d56c2c  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #d56c2c  !important;
-}
-
-i.panel-modcp {
-	color: #d56c2c  !important;
-}
-
-i.panel-admincp {
-	color: #d56c2c  !important;
-}
-
-.sharethread a:link {
-	color: #d56c2c !important;
-}
-
-.sharethread a:visited {
-	color: #d56c2c !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #d56c2c !important;
-}
-
-.progress {
-	background: #d56c2c  url('themes/FA6Dark/colors/dawn_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #d56c2c !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #d56c2c !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #d56c2c;
-}
-
-#logo {
-	background: #d56c2c url(themes/FA6Dark/colors/dawn_header.png) top left repeat-x;
-	border-bottom: 1px solid #011929;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #d56c2c;
-}
-
-.forum_on {
-color: #d56c2c;
-}
-
-.subforum_minion {
-	color: #d56c2c;
-}
-
-.thead {
-	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
-	border-bottom: 1px solid #9a4e20;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #9a4e20;
-}
-
-.popup_menu .popup_item:hover {
-	background: #f2a555;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #f2a555;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #f2a555;
-	color: #fff;
-	border-color: #9a4e20;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		]]>
 		</stylesheet>
@@ -6667,6 +6685,693 @@ color: #d56c2c;
 {$footer}
 </body>
 </html>]]></template>
+		<template name="calendar_addevent" version="1829"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$lang->calendar} - {$lang->add_event}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+{$event_errors}
+<form action="calendar.php" method="post" name="input">
+	<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder clear">
+		<tr>
+			<td colspan="2" width="100%" class="thead"><strong>{$lang->add_event}</strong></td>
+		</tr>
+		<tr>
+			<td width="20%" class="trow1"><strong>{$lang->event_name}</strong></td>
+			<td class="trow1"><input type="text" class="textbox" size="50" name="name" maxlength="120" value="{$name}"/></td>
+		</tr>
+		{$calendar_select}
+		<tr>
+			<td class="trow2" style="vertical-align: top;"><strong>{$lang->event_date}</strong></td>
+			<td class="trow1">
+				<script type="text/javascript">
+				<!--
+					function toggleType()
+					{
+						if($("#type_single").prop("checked"))
+						{
+							$("#ranged_selects").hide();
+							$("#single_selects").show();
+						}
+						else
+						{
+							$("#single_selects").hide();
+							$("#ranged_selects").show();
+							toggleRepeats();
+						}
+					}
+
+					function toggleRepeats()
+					{
+						var repeats = $("#repeats").get(0).selectedIndex;
+						$(".repeats_type").each(function()
+						{
+							$(this).hide();
+						});
+						if($("#repeats_type_"+repeats).length > 0)
+						{
+							$("#repeats_type_"+repeats).show();
+						}
+					}
+				// -->
+				</script>
+				<dl style="margin-top: 0; margin-bottom: 0; width: 100%;">
+					<dt><input type="radio" name="type" value="single" {$type_single} id="type_single" onclick="toggleType();" /> <label for="type_single"><strong>{$lang->type_single}</strong></label></dt>
+					<dd style="margin-top: 4px;" id="single_selects">
+						<span class="select-wrap">
+						<select name="single_day">
+							{$single_days}
+						</select>
+						</span>
+						&nbsp;
+						<span class="select-wrap">
+						<select name="single_month">
+							<option value="1"{$single_month['1']}>{$lang->month_1}</option>
+							<option value="2"{$single_month['2']}>{$lang->month_2}</option>
+							<option value="3"{$single_month['3']}>{$lang->month_3}</option>
+							<option value="4"{$single_month['4']}>{$lang->month_4}</option>
+							<option value="5"{$single_month['5']}>{$lang->month_5}</option>
+							<option value="6"{$single_month['6']}>{$lang->month_6}</option>
+							<option value="7"{$single_month['7']}>{$lang->month_7}</option>
+							<option value="8"{$single_month['8']}>{$lang->month_8}</option>
+							<option value="9"{$single_month['9']}>{$lang->month_9}</option>
+							<option value="10"{$single_month['10']}>{$lang->month_10}</option>
+							<option value="11"{$single_month['11']}>{$lang->month_11}</option>
+							<option value="12"{$single_month['12']}>{$lang->month_12}</option>
+						</select>
+						</span>
+						&nbsp;
+						<span class="select-wrap">
+						<select name="single_year">
+							{$single_years}
+						</select>
+						</span>
+					</dd>
+					<dt><input type="radio" name="type" value="ranged" {$type_ranged} id="type_ranged" onclick="toggleType();" /> <label for="type_ranged"><strong>{$lang->type_ranged}</strong></label></dt>
+					<dd style="margin-top: 4px; width: 100%;" id="ranged_selects">
+						<table width="100%">
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right;">{$lang->start_time}</td>
+								<td style="padding: 4px;">
+									<span class="select-wrap">
+									<select name="start_day">
+										{$start_days}
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="start_month">
+										<option value="1"{$start_month['1']}>{$lang->month_1}</option>
+										<option value="2"{$start_month['2']}>{$lang->month_2}</option>
+										<option value="3"{$start_month['3']}>{$lang->month_3}</option>
+										<option value="4"{$start_month['4']}>{$lang->month_4}</option>
+										<option value="5"{$start_month['5']}>{$lang->month_5}</option>
+										<option value="6"{$start_month['6']}>{$lang->month_6}</option>
+										<option value="7"{$start_month['7']}>{$lang->month_7}</option>
+										<option value="8"{$start_month['8']}>{$lang->month_8}</option>
+										<option value="9"{$start_month['9']}>{$lang->month_9}</option>
+										<option value="10"{$start_month['10']}>{$lang->month_10}</option>
+										<option value="11"{$start_month['11']}>{$lang->month_11}</option>
+										<option value="12"{$start_month['12']}>{$lang->month_12}</option>
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="start_year">
+										{$start_years}
+									</select>
+									</span>
+									<span class="smalltext">&nbsp;&nbsp;&nbsp;{$lang->enter_time}</span>
+									<input type="text" class="textbox" name="start_time" value="{$start_time}" size="7" />
+								</td>
+							</tr>
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right;">{$lang->end_time}</td>
+								<td style="padding: 4px;">
+									<span class="select-wrap">
+									<select name="end_day">
+										{$end_days}
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="end_month">
+										<option value="1"{$end_month['1']}>{$lang->month_1}</option>
+										<option value="2"{$end_month['2']}>{$lang->month_2}</option>
+										<option value="3"{$end_month['3']}>{$lang->month_3}</option>
+										<option value="4"{$end_month['4']}>{$lang->month_4}</option>
+										<option value="5"{$end_month['5']}>{$lang->month_5}</option>
+										<option value="6"{$end_month['6']}>{$lang->month_6}</option>
+										<option value="7"{$end_month['7']}>{$lang->month_7}</option>
+										<option value="8"{$end_month['8']}>{$lang->month_8}</option>
+										<option value="9"{$end_month['9']}>{$lang->month_9}</option>
+										<option value="10"{$end_month['10']}>{$lang->month_10}</option>
+										<option value="11"{$end_month['11']}>{$lang->month_11}</option>
+										<option value="12"{$end_month['12']}>{$lang->month_12}</option>
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="end_year">
+										{$end_years}
+									</select>
+									</span>
+									<span class="smalltext">&nbsp;&nbsp;&nbsp;{$lang->enter_time}</span>
+									<input type="text" class="textbox" name="end_time" value="{$end_time}" size="7" />
+								</td>
+							</tr>
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right; vertical-align: top;">{$lang->timezone}</td>
+								<td style="padding: 4px;">
+									{$timezones}<br />
+									<label class="smalltext" style="display: block; padding-top: 4px;"><input type="checkbox" name="ignoretimezone" value="1" {$ignore_timezone} style="vertical-align: middle;" /> {$lang->ignore_timezone} </label>
+								</td>
+							</tr>
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right; vertical-align:top;">{$lang->repeats}</td>
+								<td class="smalltext" style="padding: 4px;">
+									<span class="select-wrap">
+									<select name="repeats" id="repeats" onchange="toggleRepeats();">
+										<option value="0">{$lang->does_not_repeat}</option>
+										<option value="1"{$repeats_sel[1]}>{$lang->repeats_daily}</option>
+										<option value="2"{$repeats_sel[2]}>{$lang->repeats_weekdays}</option>
+										<option value="3"{$repeats_sel[3]}>{$lang->repeats_weekly}</option>
+										<option value="4"{$repeats_sel[4]}>{$lang->repeats_monthly}</option>
+										<option value="5"{$repeats_sel[5]}>{$lang->repeats_yearly}</option>
+									</select>
+									</span>
+									<div class="repeats_type" id="repeats_type_1" style="padding: 4px;">
+										{$lang->repeats_every}
+										<input type="text" class="textbox" name="repeats_1_days" value="{$repeats_1_days}" size="2" /> {$lang->day_or_days}
+									</div>
+									<div class="repeats_type" id="repeats_type_3" style="padding: 4px;">
+										{$lang->repeats_every}
+										<input type="text" class="textbox" name="repeats_3_weeks" value="{$repeats_3_weeks}" size="2" /> {$lang->week_or_weeks_on}
+										<br />
+										<table style="padding: 4px;">
+											<tr>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[0]" value="1" {$repeats_3_days[0]} style="vertical-align: middle;" /> {$lang->sunday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[1]" value="1" {$repeats_3_days[1]} style="vertical-align: middle;" /> {$lang->monday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[2]" value="1" {$repeats_3_days[2]} style="vertical-align: middle;" /> {$lang->tuesday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[3]" value="1" {$repeats_3_days[3]} style="vertical-align: middle;" /> {$lang->wednesday}</label></td>
+											</tr>
+											<tr>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[4]" value="1" {$repeats_3_days[4]} style="vertical-align: middle;" /> {$lang->thursday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[5]" value="1" {$repeats_3_days[5]} style="vertical-align: middle;" /> {$lang->friday}</label></td>
+												<td style="padding: 2px;" class="smalltext" colspan="2"><label><input type="checkbox" name="repeats_3_days[6]" value="1" {$repeats_3_days[6]} style="vertical-align: middle;" /> {$lang->saturday}</label></td>
+											</tr>
+										</table>
+									</div>
+									<div class="repeats_type" id="repeats_type_4" style="padding: 4px;">
+										<div class="smalltext"><label>
+											<input type="radio" name="repeats_4_type" id="repeats_4_type_1" value="1" style="vertical-align: middle;" {$repeats_4_type[1]} />
+											{$lang->repeats_on_day}</label>
+											<input type="text" class="textbox" name="repeats_4_day" value="{$repeats_4_day}" onfocus="$('#repeats_4_type_1').prop('checked', true);" size="2" /> {$lang->of_every} <input type="text" class="textbox" name="repeats_4_months" value="{$repeats_4_months}" size="2" onfocus="$('#repeats_4_type_1').prop('checked', true);" /> {$lang->month_or_months}
+										</div>
+										<div class="smalltext" style="margin-top: 5px;"><label>
+											<input type="radio" name="repeats_4_type" id="repeats_4_type_2" value="2" style="vertical-align: middle;" {$repeats_4_type[2]} />
+											{$lang->repeats_on_the}</label>
+											<span class="select-wrap">
+											<select name="repeats_4_occurance" onfocus="$('#repeats_4_type_2').prop('checked', true);">
+												<option value="1"{$repeats_4_occurance[1]}>{$lang->first}</option>
+												<option value="2"{$repeats_4_occurance[2]}>{$lang->second}</option>
+												<option value="3"{$repeats_4_occurance[3]}>{$lang->third}</option>
+												<option value="4"{$repeats_4_occurance[4]}>{$lang->fourth}</option>
+												<option value="last"{$repeats_4_occurance['last']}>{$lang->last}</option>
+											</select>
+											</span>
+											<span class="select-wrap">
+											<select name="repeats_4_weekday" onfocus="$('#repeats_4_type_2').prop('checked', true);">
+												<option value="0"{$repeats_4_weekday[0]}>{$lang->sunday}</option>
+												<option value="1"{$repeats_4_weekday[1]}>{$lang->monday}</option>
+												<option value="2"{$repeats_4_weekday[2]}>{$lang->tuesday}</option>
+												<option value="3"{$repeats_4_weekday[3]}>{$lang->wednesday}</option>
+												<option value="4"{$repeats_4_weekday[4]}>{$lang->thursday}</option>
+												<option value="5"{$repeats_4_weekday[5]}>{$lang->friday}</option>
+												<option value="6"{$repeats_4_weekday[6]}>{$lang->saturday}</option>
+											</select>
+											</span>
+											{$lang->of_every}
+											<input type="text" class="textbox" name="repeats_4_months2" value="{$repeats_4_months2}" size="2" onfocus="$('#repeats_4_type_2').prop('checked', true);" /> {$lang->month_or_months}
+										</div>
+									</div>
+									<div class="repeats_type" id="repeats_type_5" style="padding: 4px;">
+										<div class="smalltext"><label>
+											<input type="radio" name="repeats_5_type" value="1" id="repeats_5_type_1" style="vertical-align: middle;" {$repeats_5_type[1]} />
+											{$lang->repeats_on}</label>
+											<input type="text" class="textbox" name="repeats_5_day" onfocus="$('#repeats_5_type_1').prop('checked', true);" value="{$repeats_5_day}" size="2" />
+											<span class="select-wrap">
+											<select name="repeats_5_month" onfocus="$('#repeats_5_type_1').prop('checked', true);" >
+												<option value="1"{$repeats_5_month['1']}>{$lang->month_1}</option>
+												<option value="2"{$repeats_5_month['2']}>{$lang->month_2}</option>
+												<option value="3"{$repeats_5_month['3']}>{$lang->month_3}</option>
+												<option value="4"{$repeats_5_month['4']}>{$lang->month_4}</option>
+												<option value="5"{$repeats_5_month['5']}>{$lang->month_5}</option>
+												<option value="6"{$repeats_5_month['6']}>{$lang->month_6}</option>
+												<option value="7"{$repeats_5_month['7']}>{$lang->month_7}</option>
+												<option value="8"{$repeats_5_month['8']}>{$lang->month_8}</option>
+												<option value="9"{$repeats_5_month['9']}>{$lang->month_9}</option>
+												<option value="10"{$repeats_5_month['10']}>{$lang->month_10}</option>
+												<option value="11"{$repeats_5_month['11']}>{$lang->month_11}</option>
+												<option value="12"{$repeats_5_month['12']}>{$lang->month_12}</option>
+											</select>
+											</span>
+											{$lang->every}
+											<input type="text" class="textbox" name="repeats_5_years" value="{$repeats_5_years}" onfocus="$('#repeats_5_type_1').prop('checked', true);" size="2" /> {$lang->year_or_years}
+										</div>
+										<div class="smalltext" style="margin-top: 5px;"><label>
+											<input type="radio" name="repeats_5_type" value="2" id="repeats_5_type_2" style="vertical-align: middle;" {$repeats_5_type[2]} />
+											{$lang->repeats_on_the}</label>
+											<span class="select-wrap">
+											<select name="repeats_5_occurance" onfocus="$('#repeats_5_type_2').prop('checked', true);" >
+												<option value="1"{$repeats_5_occurance[1]}>{$lang->first}</option>
+												<option value="2"{$repeats_5_occurance[2]}>{$lang->second}</option>
+												<option value="3"{$repeats_5_occurance[3]}>{$lang->third}</option>
+												<option value="4"{$repeats_5_occurance[4]}>{$lang->fourth}</option>
+												<option value="last"{$repeats_4_occurance['last']}>{$lang->last}</option>
+											</select>
+											</span>
+											<span class="select-wrap">
+											<select name="repeats_5_weekday" onfocus="$('#repeats_5_type_2').prop('checked', true);" >
+												<option value="0"{$repeats_5_weekday[0]}>{$lang->sunday}</option>
+												<option value="1"{$repeats_5_weekday[1]}>{$lang->monday}</option>
+												<option value="2"{$repeats_5_weekday[2]}>{$lang->tuesday}</option>
+												<option value="3"{$repeats_5_weekday[3]}>{$lang->wednesday}</option>
+												<option value="4"{$repeats_5_weekday[4]}>{$lang->thursday}</option>
+												<option value="5"{$repeats_5_weekday[5]}>{$lang->friday}</option>
+												<option value="6"{$repeats_5_weekday[6]}>{$lang->saturday}</option>
+											</select>
+											</span>
+											{$lang->of}
+											<span class="select-wrap">
+											<select name="repeats_5_month2" onfocus="$('#repeats_5_type_2').prop('checked', true);" >
+												<option value="1"{$repeats_5_month2['1']}>{$lang->month_1}</option>
+												<option value="2"{$repeats_5_month2['2']}>{$lang->month_2}</option>
+												<option value="3"{$repeats_5_month2['3']}>{$lang->month_3}</option>
+												<option value="4"{$repeats_5_month2['4']}>{$lang->month_4}</option>
+												<option value="5"{$repeats_5_month2['5']}>{$lang->month_5}</option>
+												<option value="6"{$repeats_5_month2['6']}>{$lang->month_6}</option>
+												<option value="7"{$repeats_5_month2['7']}>{$lang->month_7}</option>
+												<option value="8"{$repeats_5_month2['8']}>{$lang->month_8}</option>
+												<option value="9"{$repeats_5_month2['9']}>{$lang->month_9}</option>
+												<option value="10"{$repeats_5_month2['10']}>{$lang->month_10}</option>
+												<option value="11"{$repeats_5_month2['11']}>{$lang->month_11}</option>
+												<option value="12"{$repeats_5_month2['12']}>{$lang->month_12}</option>
+											</select>
+											</span>
+											{$lang->every}
+											<input type="text" class="textbox" name="repeats_5_years2" value="{$repeats_5_years}" size="2" onfocus="$('#repeats_5_type_2').prop('checked', true);" /> {$lang->year_or_years}
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</dd>
+				</dl>
+				<script type="text/javascript">
+				<!--
+					toggleType();
+					toggleRepeats();
+				// -->
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%" class="trow1"><strong>{$lang->event_details}</strong>{$smilieinserter}</td>
+			<td class="trow1"><textarea name="description" id="message" rows="20" cols="70">{$description}</textarea>
+			{$codebuttons}</td>
+		</tr>
+		<tr>
+			<td width="20%" class="trow2"><strong>{$lang->event_options}</strong></td>
+			<td class="trow2">
+				<input type="checkbox" class="checkbox" name="private" value="1"{$privatecheck} /><span class="smalltext">{$lang->private_option}</span><br />
+			</td>
+		</tr>
+	</table>
+	<br />
+	<input type="hidden" name="action" value="do_addevent" />
+	<div align="center"><input type="submit" class="button" value="{$lang->post_event}" /></div>
+</form>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="calendar_editevent" version="1829"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$lang->calendar} - {$lang->edit_event}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+{$event_errors}
+<form action="calendar.php" method="post">
+	<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+		<tr>
+			<td class="thead" colspan="3"><strong>{$lang->delete_event}</strong></td>
+		</tr>
+		<tr>
+			<td class="trow1" style="white-space: nowrap"><input type="checkbox" class="checkbox" name="delete" value="1" tabindex="9" /> <strong>{$lang->delete_q}</strong></td>
+			<td class="trow1" width="100%">{$lang->delete_1}<br /><span class="smalltext">{$lang->delete_2}</span></td>
+			<td class="trow1"><input type="submit" class="button" name="submit" value="{$lang->delete_now}" tabindex="10" /></td>
+		</tr>
+	</table>
+	<input type="hidden" name="action" value="do_deleteevent" />
+	<input type="hidden" name="eid" value="{$event['eid']}" />
+</form>
+<br />
+<form action="calendar.php" method="post" name="input">
+	<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder clear">
+		<tr>
+			<td colspan="2" width="100%" class="thead"><strong>{$lang->edit_event}</strong></td>
+		</tr>
+		<tr>
+			<td width="20%" class="trow1"><strong>{$lang->event_name}</strong></td>
+			<td class="trow1"><input type="text" class="textbox" size="50" name="name" maxlength="120" value="{$name}"/></td>
+		</tr>
+		<tr>
+			<td class="trow2" style="vertical-align: top;"><strong>{$lang->event_date}</strong></td>
+			<td class="trow1">
+				<script type="text/javascript">
+				<!--
+					function toggleType()
+					{
+						if($("#type_single").prop("checked"))
+						{
+							$("#ranged_selects").hide();
+							$("#single_selects").show();
+						}
+						else
+						{
+							$("#single_selects").hide();
+							$("#ranged_selects").show();
+							toggleRepeats();
+						}
+					}
+
+					function toggleRepeats()
+					{
+						var repeats = $("#repeats").get(0).selectedIndex;
+						$(".repeats_type").each(function()
+						{
+							$(this).hide();
+						});
+						if($("#repeats_type_"+repeats).length > 0)
+						{
+							$("#repeats_type_"+repeats).show();
+						}
+					}
+				// -->
+				</script>
+				<dl style="margin-top: 0; margin-bottom: 0; width: 100%;">
+					<dt><input type="radio" name="type" value="single" {$type_single} id="type_single" onclick="toggleType();" /> <label for="type_single"><strong>{$lang->type_single}</strong></label></dt>
+					<dd style="margin-top: 4px;" id="single_selects">
+						<span class="select-wrap">
+						<select name="single_day">
+							{$single_days}
+						</select>
+						</span>
+						&nbsp;
+						<span class="select-wrap">
+						<select name="single_month">
+							<option value="1"{$single_month['1']}>{$lang->month_1}</option>
+							<option value="2"{$single_month['2']}>{$lang->month_2}</option>
+							<option value="3"{$single_month['3']}>{$lang->month_3}</option>
+							<option value="4"{$single_month['4']}>{$lang->month_4}</option>
+							<option value="5"{$single_month['5']}>{$lang->month_5}</option>
+							<option value="6"{$single_month['6']}>{$lang->month_6}</option>
+							<option value="7"{$single_month['7']}>{$lang->month_7}</option>
+							<option value="8"{$single_month['8']}>{$lang->month_8}</option>
+							<option value="9"{$single_month['9']}>{$lang->month_9}</option>
+							<option value="10"{$single_month['10']}>{$lang->month_10}</option>
+							<option value="11"{$single_month['11']}>{$lang->month_11}</option>
+							<option value="12"{$single_month['12']}>{$lang->month_12}</option>
+						</select>
+						</span>
+						&nbsp;
+						<span class="select-wrap">
+						<select name="single_year">
+							{$single_years}
+						</select>
+						</span>
+					</dd>
+					<dt><input type="radio" name="type" value="ranged" {$type_ranged} id="type_ranged" onclick="toggleType();" /> <label for="type_ranged"><strong>{$lang->type_ranged}</strong></label></dt>
+					<dd style="margin-top: 4px; width: 100%;" id="ranged_selects">
+						<table width="100%">
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right;">{$lang->start_time}</td>
+								<td style="padding: 4px;">
+									<span class="select-wrap">
+									<select name="start_day">
+										{$start_days}
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="start_month">
+										<option value="1"{$start_month['1']}>{$lang->month_1}</option>
+										<option value="2"{$start_month['2']}>{$lang->month_2}</option>
+										<option value="3"{$start_month['3']}>{$lang->month_3}</option>
+										<option value="4"{$start_month['4']}>{$lang->month_4}</option>
+										<option value="5"{$start_month['5']}>{$lang->month_5}</option>
+										<option value="6"{$start_month['6']}>{$lang->month_6}</option>
+										<option value="7"{$start_month['7']}>{$lang->month_7}</option>
+										<option value="8"{$start_month['8']}>{$lang->month_8}</option>
+										<option value="9"{$start_month['9']}>{$lang->month_9}</option>
+										<option value="10"{$start_month['10']}>{$lang->month_10}</option>
+										<option value="11"{$start_month['11']}>{$lang->month_11}</option>
+										<option value="12"{$start_month['12']}>{$lang->month_12}</option>
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="start_year">
+										{$start_years}
+									</select>
+									</span>
+									<span class="smalltext">&nbsp;&nbsp;&nbsp;{$lang->enter_time}</span>
+									<input type="text" class="textbox" name="start_time" value="{$start_time}" size="7" />
+								</td>
+							</tr>
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right;">{$lang->end_time}</td>
+								<td style="padding: 4px;">
+									<span class="select-wrap">
+									<select name="end_day">
+										{$end_days}
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="end_month">
+										<option value="1"{$end_month['1']}>{$lang->month_1}</option>
+										<option value="2"{$end_month['2']}>{$lang->month_2}</option>
+										<option value="3"{$end_month['3']}>{$lang->month_3}</option>
+										<option value="4"{$end_month['4']}>{$lang->month_4}</option>
+										<option value="5"{$end_month['5']}>{$lang->month_5}</option>
+										<option value="6"{$end_month['6']}>{$lang->month_6}</option>
+										<option value="7"{$end_month['7']}>{$lang->month_7}</option>
+										<option value="8"{$end_month['8']}>{$lang->month_8}</option>
+										<option value="9"{$end_month['9']}>{$lang->month_9}</option>
+										<option value="10"{$end_month['10']}>{$lang->month_10}</option>
+										<option value="11"{$end_month['11']}>{$lang->month_11}</option>
+										<option value="12"{$end_month['12']}>{$lang->month_12}</option>
+									</select>
+									</span>
+									<span class="select-wrap">
+									<select name="end_year">
+										{$end_years}
+									</select>
+									</span>
+									<span class="smalltext">&nbsp;&nbsp;&nbsp;{$lang->enter_time}</span>
+									<input type="text" class="textbox" name="end_time" value="{$end_time}" size="7" />
+								</td>
+							</tr>
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right; vertical-align: top;">{$lang->timezone}</td>
+								<td style="padding: 4px;">
+									{$timezones}<br />
+									<label class="smalltext" style="display: block; padding-top: 4px;"><input type="checkbox" name="ignoretimezone" value="1" {$ignore_timezone} style="vertical-align: middle;" /> {$lang->ignore_timezone}</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="smalltext" style="padding: 4px; text-align: right; vertical-align:top;">{$lang->repeats}</td>
+								<td class="smalltext" style="padding: 4px;">
+									<span class="select-wrap">
+									<select name="repeats" id="repeats" onchange="toggleRepeats();">
+										<option value="0">{$lang->does_not_repeat}</option>
+										<option value="1"{$repeats_sel[1]}>{$lang->repeats_daily}</option>
+										<option value="2"{$repeats_sel[2]}>{$lang->repeats_weekdays}</option>
+										<option value="3"{$repeats_sel[3]}>{$lang->repeats_weekly}</option>
+										<option value="4"{$repeats_sel[4]}>{$lang->repeats_monthly}</option>
+										<option value="5"{$repeats_sel[5]}>{$lang->repeats_yearly}</option>
+									</select>
+									</span>
+									<div class="repeats_type" id="repeats_type_1" style="padding: 4px;">
+										{$lang->repeats_every}
+										<input type="text" class="textbox" name="repeats_1_days" value="{$repeats_1_days}" size="2" /> {$lang->day_or_days}
+									</div>
+									<div class="repeats_type" id="repeats_type_3" style="padding: 4px;">
+										{$lang->repeats_every}
+										<input type="text" class="textbox" name="repeats_3_weeks" value="{$repeats_3_weeks}" size="2" /> {$lang->week_or_weeks_on}
+										<br />
+										<table style="padding: 4px;">
+											<tr>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[0]" value="1" {$repeats_3_days[0]} style="vertical-align: middle;" /> {$lang->sunday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[1]" value="1" {$repeats_3_days[1]} style="vertical-align: middle;" /> {$lang->monday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[2]" value="1" {$repeats_3_days[2]} style="vertical-align: middle;" /> {$lang->tuesday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[3]" value="1" {$repeats_3_days[3]} style="vertical-align: middle;" /> {$lang->wednesday}</label></td>
+											</tr>
+											<tr>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[4]" value="1" {$repeats_3_days[4]} style="vertical-align: middle;" /> {$lang->thursday}</label></td>
+												<td style="padding: 2px;" class="smalltext"><label><input type="checkbox" name="repeats_3_days[5]" value="1" {$repeats_3_days[5]} style="vertical-align: middle;" /> {$lang->friday}</label></td>
+												<td style="padding: 2px;" class="smalltext" colspan="2"><label><input type="checkbox" name="repeats_3_days[6]" value="1" {$repeats_3_days[6]} style="vertical-align: middle;" /> {$lang->saturday}</label></td>
+											</tr>
+										</table>
+									</div>
+									<div class="repeats_type" id="repeats_type_4" style="padding: 4px;">
+										<div class="smalltext"><label>
+											<input type="radio" name="repeats_4_type" id="repeats_4_type_1" value="1" style="vertical-align: middle;" {$repeats_4_type[1]} />
+											{$lang->repeats_on_day}</label>
+											<input type="text" class="textbox" name="repeats_4_day" value="{$repeats_4_day}" onfocus="$('repeats_4_type_1').checked=true;" size="2" /> {$lang->of_every} <input type="text" class="textbox" name="repeats_4_months" value="{$repeats_4_months}" size="2" onfocus="$('repeats_4_type_1').checked=true;" /> {$lang->month_or_months}
+										</div>
+										<div class="smalltext" style="margin-top: 5px;"><label>
+											<input type="radio" name="repeats_4_type" id="repeats_4_type_2" value="2" style="vertical-align: middle;" {$repeats_4_type[2]} />
+											{$lang->repeats_on_the}</label>
+											<span class="select-wrap">
+											<select name="repeats_4_occurance" onfocus="$('repeats_4_type_2').checked=true;">
+												<option value="1"{$repeats_4_occurance[1]}>{$lang->first}</option>
+												<option value="2"{$repeats_4_occurance[2]}>{$lang->second}</option>
+												<option value="3"{$repeats_4_occurance[3]}>{$lang->third}</option>
+												<option value="4"{$repeats_4_occurance[4]}>{$lang->fourth}</option>
+												<option value="last"{$repeats_4_occurance['last']}>{$lang->last}</option>
+											</select>
+											</span>
+											<span class="select-wrap">
+											<select name="repeats_4_weekday" onfocus="$('repeats_4_type_2').checked=true;">
+												<option value="0"{$repeats_4_weekday[0]}>{$lang->sunday}</option>
+												<option value="1"{$repeats_4_weekday[1]}>{$lang->monday}</option>
+												<option value="2"{$repeats_4_weekday[2]}>{$lang->tuesday}</option>
+												<option value="3"{$repeats_4_weekday[3]}>{$lang->wednesday}</option>
+												<option value="4"{$repeats_4_weekday[4]}>{$lang->thursday}</option>
+												<option value="5"{$repeats_4_weekday[5]}>{$lang->friday}</option>
+												<option value="6"{$repeats_4_weekday[6]}>{$lang->saturday}</option>
+											</select>
+											</span>
+											{$lang->of_every}
+											<input type="text" class="textbox" name="repeats_4_months2" value="{$repeats_4_months2}" size="2" onfocus="$('repeats_4_type_2').checked=true;" /> {$lang->month_or_months}
+										</div>
+									</div>
+									<div class="repeats_type" id="repeats_type_5" style="padding: 4px;">
+										<div class="smalltext"><label>
+											<input type="radio" name="repeats_5_type" value="1" id="repeats_5_type_1" style="vertical-align: middle;" {$repeats_5_type[1]} />
+											{$lang->repeats_on}</label>
+											<input type="text" class="textbox" name="repeats_5_day" onfocus="$('repeats_5_type_1').checked=true;" value="{$repeats_5_day}" size="2" />
+											<span class="select-wrap">
+											<select name="repeats_5_month" onfocus="$('repeats_5_type_1').checked=true;" >
+												<option value="1"{$repeats_5_month['1']}>{$lang->month_1}</option>
+												<option value="2"{$repeats_5_month['2']}>{$lang->month_2}</option>
+												<option value="3"{$repeats_5_month['3']}>{$lang->month_3}</option>
+												<option value="4"{$repeats_5_month['4']}>{$lang->month_4}</option>
+												<option value="5"{$repeats_5_month['5']}>{$lang->month_5}</option>
+												<option value="6"{$repeats_5_month['6']}>{$lang->month_6}</option>
+												<option value="7"{$repeats_5_month['7']}>{$lang->month_7}</option>
+												<option value="8"{$repeats_5_month['8']}>{$lang->month_8}</option>
+												<option value="9"{$repeats_5_month['9']}>{$lang->month_9}</option>
+												<option value="10"{$repeats_5_month['10']}>{$lang->month_10}</option>
+												<option value="11"{$repeats_5_month['11']}>{$lang->month_11}</option>
+												<option value="12"{$repeats_5_month['12']}>{$lang->month_12}</option>
+											</select>
+											</span>
+											{$lang->every}
+											<input type="text" class="textbox" name="repeats_5_years" value="{$repeats_5_years}" onfocus="$('repeats_5_type_1').checked=true;" size="2" /> {$lang->year_or_years}
+										</div>
+										<div class="smalltext" style="margin-top: 5px;"><label>
+											<input type="radio" name="repeats_5_type" value="2" id="repeats_5_type_2" style="vertical-align: middle;" {$repeats_5_type[2]} />
+											{$lang->repeats_on_the}</label>
+											<span class="select-wrap">
+											<select name="repeats_5_occurance" onfocus="$('repeats_5_type_2').checked=true;" >
+												<option value="1"{$repeats_5_occurance[1]}>{$lang->first}</option>
+												<option value="2"{$repeats_5_occurance[2]}>{$lang->second}</option>
+												<option value="3"{$repeats_5_occurance[3]}>{$lang->third}</option>
+												<option value="4"{$repeats_5_occurance[4]}>{$lang->fourth}</option>
+												<option value="last"{$repeats_4_occurance['last']}>{$lang->last}</option>
+											</select>
+											</span>
+											<span class="select-wrap">
+											<select name="repeats_5_weekday" onfocus="$('repeats_5_type_2').checked=true;" >
+												<option value="0"{$repeats_5_weekday[0]}>{$lang->sunday}</option>
+												<option value="1"{$repeats_5_weekday[1]}>{$lang->monday}</option>
+												<option value="2"{$repeats_5_weekday[2]}>{$lang->tuesday}</option>
+												<option value="3"{$repeats_5_weekday[3]}>{$lang->wednesday}</option>
+												<option value="4"{$repeats_5_weekday[4]}>{$lang->thursday}</option>
+												<option value="5"{$repeats_5_weekday[5]}>{$lang->friday}</option>
+												<option value="6"{$repeats_5_weekday[6]}>{$lang->saturday}</option>
+											</select>
+											</span>
+											{$lang->of}
+											<span class="select-wrap">
+											<select name="repeats_5_month2" onfocus="$('repeats_5_type_2').checked=true;" >
+												<option value="1"{$repeats_5_month2['1']}>{$lang->month_1}</option>
+												<option value="2"{$repeats_5_month2['2']}>{$lang->month_2}</option>
+												<option value="3"{$repeats_5_month2['3']}>{$lang->month_3}</option>
+												<option value="4"{$repeats_5_month2['4']}>{$lang->month_4}</option>
+												<option value="5"{$repeats_5_month2['5']}>{$lang->month_5}</option>
+												<option value="6"{$repeats_5_month2['6']}>{$lang->month_6}</option>
+												<option value="7"{$repeats_5_month2['7']}>{$lang->month_7}</option>
+												<option value="8"{$repeats_5_month2['8']}>{$lang->month_8}</option>
+												<option value="9"{$repeats_5_month2['9']}>{$lang->month_9}</option>
+												<option value="10"{$repeats_5_month2['10']}>{$lang->month_10}</option>
+												<option value="11"{$repeats_5_month2['11']}>{$lang->month_11}</option>
+												<option value="12"{$repeats_5_month2['12']}>{$lang->month_12}</option>
+											</select>
+											</span>
+											{$lang->every}
+											<input type="text" class="textbox" name="repeats_5_years2" value="{$repeats_5_years}" size="2" onfocus="$('repeats_5_type_2').checked=true;" /> {$lang->year_or_years}
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</dd>
+				</dl>
+				<script type="text/javascript">
+				<!--
+					toggleType();
+					toggleRepeats();
+				// -->
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%" class="trow1"><strong>{$lang->event_details}</strong>{$smilieinserter}</td>
+			<td class="trow1"><textarea name="description" id="message" rows="20" cols="70">{$description}</textarea>
+			{$codebuttons}</td>
+		</tr>
+		<tr>
+			<td width="20%" class="trow2"><strong>{$lang->event_options}</strong></td>
+			<td class="trow2">
+				<input type="checkbox" class="checkbox" name="private" value="1"{$privatecheck} /><span class="smalltext">{$lang->private_option}</span><br />
+			</td>
+		</tr>
+	</table>
+	<br />
+	<input type="hidden" name="action" value="do_editevent" />
+	<input type="hidden" name="eid" value="{$event['eid']}" />
+	<div align="center"><input type="submit" class="button" value="{$lang->edit_event}" /></div>
+</form>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="calendar_event_modoptions" version="1829"><![CDATA[				<form method="post" action="calendar.php">
+					<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+					<input type="hidden" name="eid" value="{$event['eid']}">
+					<span class="select-wrap">
+					<select name="action" onchange="if(this.options[this.selectedIndex].value != '') { window.location=('calendar.php?action='+this.options[this.selectedIndex].value+'&amp;eid={$event['eid']}&amp;my_post_key={$mybb->post_code}') }">
+						<option value="" style="font-weight: bold;">{$lang->moderator_options}</option>
+						<option value="{$approve_value}">{$approve}</option>
+						<option value="move">{$lang->move_event}</option>
+					</select>
+					</span>
+					{$gobutton}
+				</form>
+				<br />]]></template>
 		<template name="footer" version="1820"><![CDATA[<!-- Back to Top -->
 <script type="text/javascript">
 $(function($) {
@@ -6961,6 +7666,11 @@ $(".forumjump").on('change', function() {
 	}
 });
 </script>]]></template>
+		<template name="forumjump_special" version="1829"><![CDATA[<span class="select-wrap">
+<select name="{$name}">
+{$forumjumpbits}
+</select>
+</span>]]></template>
 		<template name="header" version="1820"><![CDATA[<div id="container">
         <a name="top" id="top"></a>
         <div id="header">
@@ -8693,16 +9403,6 @@ if(use_xmlhttprequest == "1")
 </script>
 </body>
 </html>]]></template>
-		<template name="private_advanced_search_folders" version="1820"><![CDATA[<span class="select-wrap">
-<select multiple="multiple" name="folder[]" id="folder">
-<option selected="selected">{$lang->all_folders}</option>
-{$foldersearch_folder}
-</select></span>]]></template>
-		<template name="private_archive_folders" version="1820"><![CDATA[<span class="select-wrap">
-<select name="exportfolders[]" multiple="multiple">
-<option value="all" selected="selected">{$lang->all_folders}</option>
-{$folderlist_folder}
-</select></span>]]></template>
 		<template name="private_jump_folders" version="1820"><![CDATA[<span class="select-wrap">
 <select name="jumpto">
 {$folderjump_folder}
@@ -9023,7 +9723,7 @@ if(use_xmlhttprequest == "1")
 <td class="{$optionbg}" width="70" align="center">{$votes}</td>
 <td class="{$optionbg}" width="30" align="center">{$percent}%</td>
 </tr>]]></template>
-		<template name="showthread_quickreply" version="1819"><![CDATA[<div id="quickreply_spinner" class="showthread_spinner" style="display: none"><img src="{$theme['imgdir']}/spinner.gif" style="display: none;" /><i class="fa-solid fa-spinner fa-spin"></i></div>
+		<template name="showthread_quickreply" version="1829"><![CDATA[<div id="quickreply_spinner" class="showthread_spinner" style="display: none"><img src="{$theme['imgdir']}/spinner.gif" style="display: none;" /><i class="fa-solid fa-spinner fa-spin"></i></div>
 <br />
 {$moderation_notice}
 <form method="post" action="newreply.php?tid={$tid}&amp;processed=1" name="quick_reply_form" id="quick_reply_form">
