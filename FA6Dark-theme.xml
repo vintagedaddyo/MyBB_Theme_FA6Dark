@@ -8891,6 +8891,7 @@ if(use_xmlhttprequest == "1")
 </script>
 </body>
 </html>]]></template>
+		<template name="memberlist_referrals_bit" version="1829"><![CDATA[<td class="{$alt_bg}" align="center"><span class="smalltext mlhide"><a href="{$sorturl}&amp;sort=referrals&amp;order=descending"><strong>{$lang->referrals}:</strong></a> {$orderarrow['referrals']}</span> {$user['referrals']}</td>]]></template>
 		<template name="memberlist_search" version="1829"><![CDATA[<html>
 <head>
 <title>{$mybb->settings['bbname']} - {$lang->search_member_list}</title>
@@ -9011,18 +9012,18 @@ if(use_xmlhttprequest == "1")
 </script>
 </body>
 </html>]]></template>
-		<template name="memberlist_user" version="1819"><![CDATA[<tr>
-	<td class="{$alt_bg}" align="center">{$user['avatar']}</td>
+		<template name="memberlist_user" version="1829"><![CDATA[<tr>
+	<td class="{$alt_bg}" align="center"><span class="smalltext mlhide"><a href="{$sorturl}&amp;sort=username&amp;order=ascending"><strong>{$lang->username}:</strong></a> {$orderarrow['username']}<br /></span>{$user['avatar']}</td>
 	<td class="{$alt_bg}"><span class="titletag titletag_{$usergroup['gid']}">&nbsp;</span>{$user['profilelink']}<br />
 <span class="smalltext">
 	<span class="grouptag grouptag_{$usergroup['gid']}">&nbsp; {$user['usertitle']}</span><br />
 	{$usergroup['groupimage']}<br />
     <span style="text-align: center;" class="userstar star_{$user['stars']}" title="{$user['usertitle']}"></span>
 </span></td>
-	<td class="{$alt_bg}" align="center">{$user['regdate']}</td>
-	<td class="{$alt_bg}" align="center">{$user['lastvisit']}</td>
-	<td class="{$alt_bg}" align="center">{$user['postnum']}</td>
-	<td class="{$alt_bg}" align="center">{$user['threadnum']}</td>
+	<td class="{$alt_bg}" align="center"><span class="smalltext mlhide"><a href="{$sorturl}&amp;sort=regdate&amp;order=ascending"><strong>{$lang->joined}:</strong></a> {$orderarrow['regdate']}</span>  {$user['regdate']}</td>
+	<td class="{$alt_bg}" align="center"><span class="smalltext mlhide"><a href="{$sorturl}&amp;sort=lastvisit&amp;order=descending"><strong>{$lang->lastvisit}:</strong></a> {$orderarrow['lastvisit']}</span>{$user['lastvisit']}</td>
+	<td class="{$alt_bg}" align="center"><span class="smalltext mlhide"><a href="{$sorturl}&amp;sort=postnum&amp;order=descending"><strong>{$lang->posts}:</strong></a> {$orderarrow['postnum']}</span> {$user['postnum']}</td>
+	<td class="{$alt_bg}" align="center"><span class="smalltext mlhide"><a href="{$sorturl}&amp;sort=threadnum&amp;order=descending"><strong>{$lang->threads}:</strong></a> {$orderarrow['threadnum']}</span>  {$user['threadnum']}</td>
 	{$referral_bit}
 </tr>]]></template>
 		<template name="member_profile" version="1820"><![CDATA[<html>
