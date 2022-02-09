@@ -3,11 +3,11 @@
 FA6Dark v1.1
 » About:
 
-Current FA 6 library: fontawesome-free-6.0.0-beta3
+Current FA 6 library: fontawesome-free-6.0.0
 
 This theme for MyBB enthusiasts was originally made in FA5 version simply to allow for users having troubles with the Font Awesome 5 tutorials provided and found here: https://community.mybb.com/thread-220017.html This theme has now been converted to Font Awesome 6
 
-* Note: this theme is and will be a work in progress not just due to various continuations and improvements needed to be made as planned eventually in the FA5 versions but as this is a FA6 conversion of that past FA5 theme we must also factor that currently Font Awesome 6 release is still in beta
+* Note: this theme is and will be a work in progress not just due to various continuations and improvements needed to be made as planned eventually in the FA5 versions but as this is a FA6 conversion of that past FA5 theme we must also factor that currently Font Awesome 6 release is now just out of beta and on initial release
 
 
 * For anyone having trouble with any of the tutorials supplied in that thread..., well, here is simply the default theme with all colors, and a good majority of the tutorials in that thread applied in it.
