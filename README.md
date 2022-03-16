@@ -37,6 +37,8 @@ FA6Dark v1.1
 
 History:
 
+03/16/2022 - Theme .xml file created for mybb 1.8.30 usage
+
 01/30/2022 - Theme .xml version 1.1 file created for mybb 1.8.29 usage
 
 01/30/2022 - Theme .xml version 1.0 file created for mybb 1.8.29 usage
