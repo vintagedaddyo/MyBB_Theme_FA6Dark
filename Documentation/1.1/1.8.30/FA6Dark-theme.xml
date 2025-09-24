@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="FA6Dark" version="1839">
+<theme name="FA6Dark" version="1830">
 	<properties>
-		<templateset><![CDATA[3]]></templateset>
+		<templateset><![CDATA[17]]></templateset>
 		<editortheme><![CDATA[FA6-Dark.css]]></editortheme>
 		<imgdir><![CDATA[themes/FA6Dark]]></imgdir>
 		<logo><![CDATA[themes/FA6Dark/logo.png]]></logo>
@@ -11,7 +11,7 @@
 		<disporder><![CDATA[a:19:{s:10:"global.css";i:1;s:8:"css3.css";i:2;s:10:"usercp.css";i:3;s:9:"modcp.css";i:4;s:17:"thread_status.css";i:5;s:14:"showthread.css";i:6;s:16:"star_ratings.css";i:7;s:15:"color_black.css";i:8;s:14:"color_calm.css";i:9;s:14:"color_dawn.css";i:10;s:15:"color_earth.css";i:11;s:15:"color_flame.css";i:12;s:14:"color_leaf.css";i:13;s:15:"color_night.css";i:14;s:13:"color_sun.css";i:15;s:18:"color_twilight.css";i:16;s:15:"color_water.css";i:17;s:17:"gidpostborder.css";i:18;s:10:"extras.css";i:19;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="global.css" version="1839"><![CDATA[/*
+		<stylesheet name="global.css" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: global.css
@@ -2745,10 +2745,9 @@ div.jqi .jqisubstate .jqibuttons button{
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="gidpostborder.css" version="1839"><![CDATA[/*
+		<stylesheet name="gidpostborder.css" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: gidpostborder.css
@@ -2875,10 +2874,9 @@ div.jqi .jqisubstate .jqibuttons button{
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="css3.css" version="1839"><![CDATA[/*
+		<stylesheet name="css3.css" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: css3.css
@@ -3058,10 +3056,9 @@ button, input.button, input.textbox, input.invalid_field, input.valid_field, sel
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="extras.css" version="1839"><![CDATA[/*
+		<stylesheet name="extras.css" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: extras.css
@@ -3695,10 +3692,9 @@ select {
 }	
 /* end */
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_earth.css" attachedto="earth" version="1839"><![CDATA[/*
+		<stylesheet name="color_earth.css" attachedto="earth" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_earth.css
@@ -3946,10 +3942,9 @@ color: #4a3b2f;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1839"><![CDATA[/*
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: showthread.css
@@ -4055,10 +4050,9 @@ ul.thread_tools li.poll:after {
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1839"><![CDATA[/*
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: star_rating.css
@@ -4158,10 +4152,9 @@ ul.thread_tools li.poll:after {
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1839"><![CDATA[/*
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: thread_status.css
@@ -4563,10 +4556,9 @@ ul.thread_tools li.poll:after {
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1839"><![CDATA[/*
+		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: usercp.css
@@ -4859,10 +4851,9 @@ td[class^=trow]{
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1839"><![CDATA[/*
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: modcp.css
@@ -4994,10 +4985,9 @@ td[class^=trow]{
 	background-image: url('themes/FA6Dark/modcp/announcement/announce_off.png'); 
 }				
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_sun.css" attachedto="sun" version="1839"><![CDATA[/*
+		<stylesheet name="color_sun.css" attachedto="sun" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_calm.css
@@ -5252,10 +5242,9 @@ color: #ffdd4d;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_twilight.css" attachedto="twilight" version="1839"><![CDATA[/*
+		<stylesheet name="color_twilight.css" attachedto="twilight" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_twilight.css
@@ -5503,10 +5492,9 @@ color: #A0A0A0;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_water.css" attachedto="water" version="1839"><![CDATA[/*
+		<stylesheet name="color_water.css" attachedto="water" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_water.css
@@ -5754,10 +5742,9 @@ color: #1e6365;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_flame.css" attachedto="flame" version="1839"><![CDATA[/*
+		<stylesheet name="color_flame.css" attachedto="flame" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_flame.css
@@ -6003,10 +5990,9 @@ color: #750000;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_leaf.css" attachedto="leaf" version="1839"><![CDATA[/*
+		<stylesheet name="color_leaf.css" attachedto="leaf" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_leaf.css
@@ -6254,10 +6240,9 @@ color: #386e21;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_night.css" attachedto="night" version="1839"><![CDATA[/*
+		<stylesheet name="color_night.css" attachedto="night" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_night.css
@@ -6505,10 +6490,9 @@ color: #A0A0A0;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_black.css" attachedto="black" version="1839"><![CDATA[/*
+		<stylesheet name="color_black.css" attachedto="black" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_black.css
@@ -6841,10 +6825,9 @@ color: #A0A0A0;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_calm.css" attachedto="calm" version="1839"><![CDATA[/*
+		<stylesheet name="color_calm.css" attachedto="calm" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_calm.css
@@ -7097,10 +7080,9 @@ color: #385947;
 		
 		
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="color_dawn.css" attachedto="dawn" version="1839"><![CDATA[/*
+		<stylesheet name="color_dawn.css" attachedto="dawn" version="1830"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
  * File: color_dawn.css
@@ -7336,7 +7318,6 @@ color: #d56c2c;
 }
 
 
-		
 		
 		
 		
