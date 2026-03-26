@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme name="FA6Dark" version="1839">
 	<properties>
-		<templateset><![CDATA[3]]></templateset>
+		<templateset><![CDATA[13]]></templateset>
 		<editortheme><![CDATA[FA6-Dark.css]]></editortheme>
 		<imgdir><![CDATA[themes/FA6Dark]]></imgdir>
 		<logo><![CDATA[themes/FA6Dark/logo.png]]></logo>
@@ -11,6 +11,4636 @@
 		<disporder><![CDATA[a:19:{s:10:"global.css";i:1;s:8:"css3.css";i:2;s:10:"usercp.css";i:3;s:9:"modcp.css";i:4;s:17:"thread_status.css";i:5;s:14:"showthread.css";i:6;s:16:"star_ratings.css";i:7;s:15:"color_black.css";i:8;s:14:"color_calm.css";i:9;s:14:"color_dawn.css";i:10;s:15:"color_earth.css";i:11;s:15:"color_flame.css";i:12;s:14:"color_leaf.css";i:13;s:15:"color_night.css";i:14;s:13:"color_sun.css";i:15;s:18:"color_twilight.css";i:16;s:15:"color_water.css";i:17;s:17:"gidpostborder.css";i:18;s:10:"extras.css";i:19;}]]></disporder>
 	</properties>
 	<stylesheets>
+		<stylesheet name="color_dawn.css" attachedto="dawn" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_dawn.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #d56c2c;
+}
+
+input[type=checkbox]:checked:before {
+    color: #d56c2c;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #d56c2c;
+	-webkit-box-shadow: inset 0 1px 1px rgb(213,108,44), 0 0 8px rgba(213,108,44, 0.8);
+	box-shadow: inset 0 1px 1px rgba(213,108,44, 0.8), 0 0 8px rgba(213,108,44, 0.8);
+}
+
+input.login {
+	border: 5px solid #d56c2c;
+
+}
+
+input.login:hover {
+	background: #d56c2c;
+}
+
+i.lostpwd {
+   color: #d56c2c;
+}
+
+i.printer {
+	color: #d56c2c;
+}
+
+i.sendto {
+	color: #d56c2c;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #d56c2c;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #d56c2c  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #d56c2c  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #d56c2c  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #d56c2c  !important;
+}
+
+.usercp_nav_item::before {
+	color: #d56c2c  !important;
+}
+
+.modcp_nav_item:before{
+    color: #d56c2c  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #d56c2c  !important;
+}
+
+i.panel-modcp {
+	color: #d56c2c  !important;
+}
+
+i.panel-admincp {
+	color: #d56c2c  !important;
+}
+
+.sharethread a:link {
+	color: #d56c2c !important;
+}
+
+.sharethread a:visited {
+	color: #d56c2c !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #d56c2c !important;
+}
+
+.progress {
+	background: #d56c2c  url('themes/FA6Dark/colors/dawn_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #d56c2c !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #d56c2c !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #d56c2c;
+}
+
+#logo {
+	background: #d56c2c url(themes/FA6Dark/colors/dawn_header.png) top left repeat-x;
+	border-bottom: 1px solid #011929;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #d56c2c;
+}
+
+.forum_on {
+color: #d56c2c;
+}
+
+.subforum_minion {
+	color: #d56c2c;
+}
+
+.thead {
+	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
+	border-bottom: 1px solid #9a4e20;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #9a4e20;
+}
+
+.popup_menu .popup_item:hover {
+	background: #f2a555;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #f2a555;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #f2a555;
+	color: #fff;
+	border-color: #9a4e20;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_calm.css" attachedto="calm" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_calm.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #48715b;
+}
+
+input[type=checkbox]:checked:before {
+    color: #48715b;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #48715b;
+	-webkit-box-shadow: inset 0 1px 1px rgb(72,113,91), 0 0 8px rgba(72,113,91, 0.8);
+	box-shadow: inset 0 1px 1px rgba(72,113,91, 0.8), 0 0 8px rgba(72,113,91, 0.8);
+}
+
+input.login {
+	border: 5px solid #48715b;
+
+}
+
+input.login:hover {
+	background: #48715b;
+}
+
+i.lostpwd {
+   color: #48715b;
+}
+
+i.printer {
+	color: #48715b;
+}
+
+i.sendto {
+	color: #48715b;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #48715b;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #48715b !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #48715b !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #48715b !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #48715b !important;
+}
+
+.usercp_nav_item::before {
+	color: #48715b !important;
+}
+
+.modcp_nav_item:before{
+    color: #48715b !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #48715b !important;
+}
+
+i.panel-modcp {
+	color: #48715b !important;
+}
+
+i.panel-admincp {
+	color: #48715b !important;
+}
+
+.sharethread a:link {
+	color: #48715b !important;
+}
+
+.sharethread a:visited {
+	color: #48715b !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #385947 !important;
+}
+
+.progress {
+	background: #385947  url('themes/FA6Dark/colors/calm_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #48715b !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #48715b !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #48715b;
+}
+
+#logo {
+	background: #385947 url(themes/FA6Dark/colors/calm_header.png) top left repeat-x;
+	border-bottom: 1px solid #263c30;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #385947;
+}
+
+#panel .lower a:hover{
+    color: #385947;
+}
+
+.forum_on {
+color: #385947;
+}
+
+.subforum_minion {
+	color: #385947;
+}
+
+.thead {
+	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
+	color: #ffffff;
+	border-bottom: 1px solid #263c30;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #263c30;
+}
+
+.popup_menu .popup_item:hover {
+	background: #48715b;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #48715b;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #48715b;
+	color: #fff;
+	border-color: #263c30;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_black.css" attachedto="black" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_black.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #A0A0A0;
+}
+
+input[type=checkbox]:checked:before {
+    color: #A0A0A0;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #A0A0A0;
+	-webkit-box-shadow: inset 0 1px 1px rgb(160,160,160), 0 0 8px rgba(160,160,160, 0.8);
+	box-shadow: inset 0 1px 1px rgba(160,160,160, 0.8), 0 0 8px rgba(160,160,160, 0.8);
+}
+
+input.login {
+	border: 5px solid #A0A0A0;
+
+}
+
+input.login:hover {
+	background: #A0A0A0;
+}
+
+i.lostpwd {
+   color: #A0A0A0;
+}
+
+i.printer {
+	color: #fff;
+}
+
+i.sendto {
+	color: #fff;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #A0A0A0 !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #A0A0A0 !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #A0A0A0 !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #A0A0A0 !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #A0A0A0 !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #fff !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #fff !important;
+}
+
+.usercp_nav_item::before {
+	color: #555 !important;
+}
+
+.modcp_nav_item:before{
+    color: #555 !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #555 !important;
+}
+
+i.panel-modcp {
+	color: #555 !important;
+}
+
+i.panel-admincp {
+	color: #555 !important;
+}
+
+.sharethread a:link {
+	color: #555 !important;
+}
+.sharethread a:visited {
+	color: #555 !important;
+}
+.sharethread a:hover,
+.sharethread a:active {
+	color: #fff !important;
+}
+
+.progress_bar {
+	border: 1px solid #202020 !important;
+}
+
+.progress {
+	background: #202020  url('themes/FA6Dark/colors/black_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #555 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #555 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #555;
+}
+
+#logo {
+	background: #202020 url(themes/FA6Dark/colors/black_header.png) top left repeat-x;
+	border-bottom: 1px solid #263c30;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+/*
+#panel .upper {
+	background: #dcdbdc url(themes/FA6Dark/colors/black_tcat.png) repeat-x;
+	color: #000;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #bbb;
+}
+
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+	color: #000;
+}
+
+#panel input.textbox {
+	border-color: #ccc;
+}
+
+#panel input.button {
+	background: #202121 url(themes/FA6Dark/colors/black_thead.png) top left repeat-x;
+	color: #fff;
+	border-color: #000;
+}
+*/
+
+#panel .upper {
+    background: #555;
+    background: -moz-linear-gradient(top, #555 0%, #333 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555), color-stop(100%, #333));
+    background: -webkit-linear-gradient(top, #555 0%, #333 100%);
+    background: -o-linear-gradient(top, #555 0%, #333 100%);
+    background: -ms-linear-gradient(top, #555 0%, #333 100%);
+    background: linear-gradient(top, #555 0%, #333 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#555', endColorstr='#333', GradientType=0 );
+    color: #fff;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 7px;
+    clear: both; 
+}
+#panel .upper a:link, #panel .upper a:visited, #panel .upper a:hover, #panel .upper a:active {
+    color: #FFF;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #555;
+}
+
+#panel .lower a:hover{
+    color: #555;
+}
+
+.forum_on {
+color: #A0A0A0;
+}
+
+.subforum_minion {
+	color: #A0A0A0;
+}
+
+.thead {
+	background: #202121 url(themes/FA6Dark/colors/black_thead.png) top left repeat-x;
+	border-bottom: 1px solid #000;
+}
+/*
+.tcat {
+	background: #dcdbdc url(themes/FA6Dark/colors/black_tcat.png) repeat-x;
+	color: #000000;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #bbb;
+}
+
+.tcat a:link,
+.tcat a:visited,
+.tcat a:hover,
+.tcat a:active {
+	color: #000000;
+}
+*/
+
+.tcat {
+	font-size: 12px;
+    background: #555;
+    background: -moz-linear-gradient(top, #555 0%, #333 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555), color-stop(100%, #333));
+    background: -webkit-linear-gradient(top, #555 0%, #333 100%);
+    background: -o-linear-gradient(top, #555 0%, #333 100%);
+    background: -ms-linear-gradient(top, #555 0%, #333 100%);
+    background: linear-gradient(top, #555 0%, #333 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#555', endColorstr='#333', GradientType=0 );
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding: 7px;
+    clear: both;		
+}
+
+.tcat a:link {
+	color: #fff;
+}
+
+.tcat a:visited {
+	color: #fff;
+}
+
+.tcat a:hover,
+.tcat a:active {
+	color: #fff;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #111;
+}
+
+.popup_menu .popup_item:hover {
+	background: #333;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #333;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #333;
+	color: #fff;
+	border-color: #000;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_earth.css" attachedto="earth" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_earth.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #6d5545;
+}
+
+input[type=checkbox]:checked:before {
+    color: #6d5545;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #6d5545;
+	-webkit-box-shadow: inset 0 1px 1px rgb(109,85,69), 0 0 8px rgba(109,85,69, 0.8);
+	box-shadow: inset 0 1px 1px rgba(109,85,69, 0.8), 0 0 8px rgba(109,85,69, 0.8);
+}
+
+input.login {
+	border: 5px solid #6d5545;
+
+}
+
+input.login:hover {
+	background: #6d5545;
+}
+
+i.lostpwd {
+   color: #6d5545;
+}
+
+i.printer {
+	color: #6d5545;
+}
+
+i.sendto {
+	color: #6d5545;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #6d5545;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #6d5545  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #6d5545  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #6d5545  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #6d5545  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #6d5545  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #6d5545  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #6d5545  !important;
+}
+
+.usercp_nav_item::before {
+	color: #6d5545  !important;
+}
+
+.modcp_nav_item:before{
+    color: #6d5545  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #6d5545  !important;
+}
+
+i.panel-modcp {
+	color: #6d5545  !important;
+}
+
+i.panel-admincp {
+	color: #6d5545  !important;
+}
+
+.sharethread a:link {
+	color: #6d5545 !important;
+}
+
+.sharethread a:visited {
+	color: #6d5545 !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #4a3a2e !important;
+}
+
+.progress {
+	background: #4a3a2e  url('themes/FA6Dark/colors/earth_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #6d5545 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #6d5545 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #6d5545;
+}
+
+#logo {
+	background: #4a3a2e url(themes/FA6Dark/colors/earth_header.png) top left repeat-x;
+	border-bottom: 1px solid #31261e;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #4a3b2f url(themes/FA6Dark/colors/earth_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #4a3b2f;
+}
+
+.forum_on {
+color: #4a3b2f;
+}
+
+.subforum_minion {
+	color: #4a3b2f;
+}
+
+.thead {
+	background: #4a3b2f url(themes/FA6Dark/colors/earth_thead.png) top left repeat-x;
+	border-bottom: 1px solid #31261e;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #31261e;
+}
+
+.popup_menu .popup_item:hover {
+	background: #6d5545;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #6d5545;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #6d5545;
+	color: #fff;
+	border-color: #31261e;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: showthread.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+ul.thread_tools,
+ul.thread_tools li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.thread_tools li {
+	padding-left: 0;
+	padding-bottom: 4px;
+	margin-bottom: 3px;
+	font-size: 11px;
+}
+
+ul.thread_tools li.printable:after {
+	font-family: "Font Awesome 6 Free";
+	font-size: 14px;
+	color: #007FC6;
+	content: "\f02f";
+	float: left;
+	position: relative;
+	z-index: 0;
+	padding-right: 5px;
+	font-weight: 900;
+}
+
+ul.thread_tools li.sendthread:after {
+	font-family: "Font Awesome 6 Free";
+	font-size: 14px;
+	color: #007FC6;
+	content: "\f0e0";
+	position: relative;
+	z-index: 0;
+	float: left;
+	padding-right: 5px;
+	font-weight: 900;
+}
+
+ul.thread_tools li.subscription_add:after {
+	font-family: "Font Awesome 6 Free";
+	font-size: 14px;
+	color: #007FC6;
+	content: "\f067";
+	position: relative;
+	z-index: 0;
+	float: left;
+	padding-right: 5px;
+	font-weight: 900;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	font-family: "Font Awesome 6 Free";
+	font-size: 14px;
+	color: #007FC6;
+	content: "\f068";
+	position: relative;
+	z-index: 0;
+	float: left;
+	padding-right: 5px;
+	font-weight: 900;
+}
+
+ul.thread_tools li.poll:after {
+	font-family: "Font Awesome 6 Free";
+	font-size: 14px;
+	color: #007FC6;
+	content: "\f080";
+	position: relative;
+	z-index: 0;
+	float: left;
+	padding-right: 5px;
+	font-weight: 900;
+}
+
+.showthread_spinner {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: star_rating.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Pure CSS & FA 6 Star Rating By Johnny S & Vintagedaddyo **/
+
+ .star_rating_container {
+     display: inline-block;
+     vertical-align: middle;
+     margin-right: 6px;
+     float: right;
+     margin-top: 6px;
+}
+ .star_rating {
+     unicode-bidi: bidi-override;
+     direction: ltr;
+     list-style:none outside none;
+     margin: 0;
+     padding: 0;
+}
+ .star_rating, .star_rating .current_rating {
+     vertical-align: middle;
+}
+ td .star_rating {
+     margin-left: 0 auto;
+     width: 120px;
+     position: relative;
+     left: -13px;
+}
+ .star_rating li {
+     margin-left: 5px;
+     float: right;
+     unicode-bidi: bidi-override;
+}
+ .star_rating li a {
+     color: #b9b9b9;
+     text-decoration: none;
+}
+ .star_rating li a {
+     font-size: 0px;
+}
+ .star_rating li a:before {
+     font-family: "Font Awesome 6 Free";
+     font-weight: 900;
+     content: "\f005";
+     font-size: 14px;
+}
+ .star_rating_notrated li:hover a, .star_rating_notrated li:hover ~ li a {
+     color: #A0A0A0 !important;
+     cursor: pointer;
+}
+ li.current_rating[style*="20"] ~ li a.one_star, li.current_rating[style*="40"] ~ li:nth-child(n+5) a, li.current_rating[style*="60"] ~ li:nth-child(n+4) a, li.current_rating[style*="80"] ~ li:nth-child(n+3) a, li[style*="100"]~ li:nth-child(n+2) a {
+     color: #eab71f;
+}
+ .star_rating .current_rating {
+     unicode-bidi: bidi-override;
+     direction: rtl;
+     display: none;
+     float: left;
+     text-align: right;
+     position: relative;
+     top: 1px;
+     right: 3px;
+}
+ .inline_rating {
+     float: left;
+     vertical-align: middle;
+     padding-right: 5px;
+}
+ .star_rating_success, .success_message {
+     color: #00b200;
+     font-weight: bold;
+     font-size: 10px;
+     margin-bottom: 10px;
+}
+ td[id*="rating_table"] {
+     text-align: center;
+     margin:0 auto;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: thread_status.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+.thread_status {
+    display: inline-block;
+}
+
+.thread_status.dot_folder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #017DCC;
+    content: "\f111";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_folder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.dot_hotfolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #FA6A6A;
+    content: "\f111";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_hotfolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.dot_hotclosefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #FA6A6A;
+    content: "f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_hotclosefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.dot_closefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #FFD700;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_closefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.dot_newfolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #FFD700;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_newfolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.dot_newhotfolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #FF0000;
+    content: "\f111";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_newhotfolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.dot_newhotclosefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #FF0000;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_newhotclosefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;
+}
+
+.thread_status.dot_newclosefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #FFD700;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.dot_newclosefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.folder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #C6C6C6;
+    content: "\f111";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.folder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.hotfolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #FA6A6A;
+    content: "\f111";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.hotfolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.hotclosefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #FA6A6A;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.hotclosefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.closefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #333;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.closefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.movefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #FFD700;
+    content: "\f111";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.movefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.newfolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #BDE1A0;
+    content: "\f111";
+    position: absolute;
+    z-index: 1; 
+    font-weight: 900;    
+}
+
+.thread_status.newfolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.newhotfolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 8px;
+    color: #FF0000;
+    content: "\f111";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.newhotfolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.newhotclosefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #FF0000;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.newhotclosefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+
+.thread_status.newclosefolder:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #AEAEAE;
+    content: "\f023";
+    position: absolute;
+    z-index: 1;
+    font-weight: 900;    
+}
+
+.thread_status.newclosefolder:after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: #fff;
+    content: "\f15c";
+    position: relative;
+    z-index: 0;
+    background-color: #333;
+    border: #333 1px solid;
+    font-weight: 900;    
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: usercp.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+.cp_options td:first-child{
+      width:230px;
+}
+
+.usercp_options{
+      margin:0;
+      padding:0;
+      list-style:none outside none;
+}
+
+.usercp_options>li{
+      margin:0;
+      padding:4px 0px;
+}
+
+.usercp_options>li>span{
+      display:inline-block;
+      text-align:right;
+}
+
+.usercp_nav_item{
+      display:block;
+}
+
+.usercp_nav_item a {
+	color:#0072BC;
+}
+
+.usercp_nav_item:before{
+      font-size:16px;
+      font-family:"Font Awesome 6 Free";
+	  font-weight: 900;
+      color: #0072BC;
+      width:28px;
+      margin-right:3px;
+      text-align:center;
+      display:inline-block;
+}
+
+.usercp_nav_composepm:before{
+      content:"\f3e5";
+}
+
+.usercp_nav_pmfolder:before{
+      content:"\f07c";
+}
+
+.usercp_nav_sub_pmfolder:before{
+      content:"\f07b";
+}
+
+.usercp_nav_trash_pmfolder:before{
+      content:"\f2ed";
+}
+
+.usercp_nav_pmtracking:before{
+      content:"\f024";
+}
+
+.usercp_nav_pmfolders:before{
+      content:"\f07b";
+}
+
+.usercp_nav_profile:before{
+      content:"\f007";
+}
+
+.usercp_nav_email:before{
+      content:"\f0e0";
+}
+
+.usercp_nav_password:before{
+      content:"\f084";
+}
+
+.usercp_nav_username:before{
+      content:"\f111";
+}
+
+.usercp_nav_editsig:before{
+      content:"\f303";
+}
+
+.usercp_nav_avatar:before{
+      content:"\f03e";
+}
+
+.usercp_nav_options:before{
+      content:"\f085";
+}
+
+.usercp_nav_usergroups:before{
+      content:"\f0c0";
+}
+
+.usercp_nav_editlists:before{
+      content:"\f004";
+}
+
+.usercp_nav_attachments:before{
+      content:"\f0c6";
+}
+
+.usercp_nav_drafts:before{
+      content:"\f303";
+}
+
+.usercp_nav_subscriptions:before{
+      content:"\f02e";
+}
+
+.usercp_nav_fsubscriptions:before{
+      content:"\f03a";
+}
+
+.usercp_nav_notepad:before{
+      content:"\f02d";
+}
+
+.usercp_nav_viewprofile:before{
+      content:"\f007";
+}
+
+.usercp_nav_home:before{
+      content:"\f015";
+}
+
+.usercp_nav_status:before{
+      content:"\f118";
+}
+
+.usercp_nav_myalerts:before{
+      content:"\f0f3";
+}
+
+.usercp_nav_myalerts_delete_all:before{
+      content:"\f058";
+}
+
+.usercp_nav_myalerts_delete_read:before{
+      content:"\f05c";
+}
+
+.usercp_nav_award:before{
+      content:"\f091";
+}
+
+.usercp_notepad{
+      width:99%;
+}
+
+#usercpalerts_e td[class^="trow"],#usercppms_e td[class^="trow"],#usercpprofile_e td[class^="trow"],#usercpmisc_e td[class^="trow"]{
+      border:none;
+      padding:0px;
+}
+
+.pagination{
+      padding:3px 0px;
+}
+
+.usercp_notepad{
+      width:99%;
+}
+
+.usercp_container{
+      margin:5px;
+      padding:8px;
+}
+
+td[class^=trow]{
+      border:none;
+}
+
+.pmspace {
+	float: right;
+	margin: -3px 5px;
+}
+
+.pmspace_container {
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 100px;
+	display: inline-block;
+}
+
+.pmspace_used {
+	display: inline-block;
+	color: #fff;
+	margin: -1px;
+}
+
+.pmspace_used.low {
+	border: 1px solid #0c5a01;
+	background: #167203;
+}
+
+.pmspace_used.medium {
+	background: #ff862b;
+	border: 1px solid #d7611e;
+}
+
+.pmspace_used.high {
+	background: #e73c3c;
+	border: 1px solid #c00;
+}
+
+.pmspace_unused {
+	display: inline-block;
+}
+
+.pmspace_text {
+	padding: 1px 5px;
+	display: inline-block;
+}
+
+.new_pm {
+	font-weight: bold;
+}
+
+/** FA PM Icons **/
+
+.x_new_pm:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0e0";
+    font-size: 16px;
+}
+
+.x_old_pm:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f2b6";
+    font-size: 16px;
+}
+
+.x_fw_pm:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f2b6";
+    position: absolute;
+    font-size: 16px;
+}
+
+.x_fw_pm:after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f30b";
+    position: relative;
+    top: 11px;
+    left: 5px;
+    color: #5b94c5;
+    font-size: 16px;
+	font-weight: 900;
+}
+
+.x_re_pm:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f2b6";
+    position: absolute;
+    font-size: 16px;
+}
+
+.x_re_pm:after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f30a";
+    position: relative;
+    top: 11px;
+    right: 5px;
+    color: #663096;
+    font-size: 16px;
+	font-weight: 900;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: modcp.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+.modcp_nav_item:before{
+      font-size:16px;
+      font-family:"Font Awesome 6 Free";
+	  font-weight: 900;
+      color: #0072BC;
+      width:28px;
+      margin-right:3px;
+      text-align:center;
+      display:inline-block;
+}
+
+.modcp_nav_home:before{
+      content:"\f015";
+}
+
+.modcp_nav_announcements:before {
+    content:"\f0f3"
+}
+
+.modcp_nav_reports:before {
+    content: "\f071";
+}
+
+.modcp_nav_modqueue:before {
+    content:"\f02d"
+}
+
+.modcp_nav_modlogs:before {
+    content: "\f109";
+}
+
+.modcp_nav_editprofile:before {
+    content: "\f007";
+}
+
+.modcp_nav_banning:before {
+    content: "\f023";
+}
+
+.modcp_nav_warninglogs:before {
+    content: "\f06e";
+}
+
+.modcp_nav_ipsearch:before {
+    content: "\f002";
+}
+
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: 270px;
+	float: right;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore,
+.label_radio_delete,
+.label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	color: #444;
+	font-size: 95%;
+	margin-bottom: 8px;
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0;
+	width: 150px;
+	padding: 0;
+}
+
+.modqueue_mass li {
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+.modqueue_mass li a {
+	display: block;
+	padding: 4px;
+	border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+	background: #efefef;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+
+/** Modcp Announcement active/expired **/
+
+.mcp_announceicon {
+	height: 16px; 
+	width: 16px; 
+	display: inline-block;  
+	vertical-align: middle; 
+}
+
+.mcp_announceicon_on {
+    background-image: url('themes/FA6Dark/modcp/announcement/announce_on.png'); 
+}
+
+.mcp_announceicon_off {
+	background-image: url('themes/FA6Dark/modcp/announcement/announce_off.png'); 
+}				
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_sun.css" attachedto="sun" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_calm.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #ffdd4d;
+}
+
+input[type=checkbox]:checked:before {
+    color: #ffdd4d;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #ffdd4d;
+	-webkit-box-shadow: inset 0 1px 1px rgb(255,221,77), 0 0 8px rgba(255,221,77, 0.8);
+	box-shadow: inset 0 1px 1px rgba(255,221,77, 0.8), 0 0 8px rgba(255,221,77, 0.8);
+}
+
+input.login {
+	border: 5px solid #ffdd4d;
+
+}
+
+input.login:hover {
+	background: #ffdd4d;
+}
+
+i.lostpwd {
+   color: #ffdd4d;
+}
+
+i.printer {
+	color: #ffdd4d;
+}
+
+i.sendto {
+	color: #ffdd4d;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #ffdd4d;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #ffdd4d  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #ffdd4d  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #ffdd4d  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #ffdd4d  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #ffdd4d  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #ffdd4d  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #ffdd4d  !important;
+}
+
+.usercp_nav_item::before {
+	color: #ffdd4d  !important;
+}
+
+.modcp_nav_item:before{
+    color: #ffdd4d  !important;
+}
+
+i.toplinks-portal {
+	color: #555 !important;
+}
+
+i.toplinks-search {
+	color: #555 !important;
+}
+
+i.toplinks-memberlist {
+	color: #555 !important;
+}
+
+i.toplinks-calendar {
+	color: #555 !important;
+}
+
+i.toplinks-help {
+	color: #555 !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #ffdd4d  !important;
+}
+
+i.panel-modcp {
+	color: #ffdd4d  !important;
+}
+
+i.panel-admincp {
+	color: #ffdd4d  !important;
+}
+
+.sharethread a:link {
+	color: #555 !important;
+}
+.sharethread a:visited {
+	color: #555 !important;
+}
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #ffdd4d !important;
+}
+
+.progress {
+	background: #ffdd4d url('themes/FA6Dark/colors/sun_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #555 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #555 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #333 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #555;
+}
+
+#logo {
+	background: #ffdd4d url(themes/FA6Dark/colors/sun_header.png) top left repeat-x;
+	border-bottom: 1px solid #111;
+}
+
+#header ul.menu li a {
+	color: #555;
+}
+
+#panel input.button {
+	background: #ffdd4d url(themes/FA6Dark/colors/sun_thead.png) top left repeat-x;
+	color: #000;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #ffdd4d;
+}
+
+.forum_on {
+color: #ffdd4d;
+}
+
+.subforum_minion {
+	color: #ffdd4d;
+}
+
+.thead {
+	background: #ffdd4d url(themes/FA6Dark/colors/sun_thead.png) top left repeat-x;
+	border-bottom: 1px solid #ffaf1a;
+	color: #000;
+}
+
+.thead a:link,
+.thead a:visited,
+.thead a:hover,
+.thead a:active {
+	color: #000;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #ffaf1a;
+}
+
+.popup_menu .popup_item:hover {
+	background: #ffea9c;
+	color: #000;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #ffea9c;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #ffea9c;
+	color: #000;
+	border-color: #ffaf1a;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_twilight.css" attachedto="twilight" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_twilight.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #A0A0A0;
+}
+
+input[type=checkbox]:checked:before {
+    color: #A0A0A0;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #273a46;
+	-webkit-box-shadow: inset 0 1px 1px rgb(39,58,70), 0 0 8px rgba(39,58,70, 0.8);
+	box-shadow: inset 0 1px 1px rgba(39,58,70, 0.8), 0 0 8px rgba(39,58,70, 0.8);
+}
+
+input.login {
+	border: 5px solid #273a46;
+
+}
+
+input.login:hover {
+	background: #273a46;
+}
+
+i.lostpwd {
+   color: #273a46;
+}
+
+i.printer {
+	color: #fff;
+}
+
+i.sendto {
+	color: #fff;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #A0A0A0  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #A0A0A0  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #A0A0A0  !important;
+}
+
+.usercp_nav_item::before {
+	color: #A0A0A0  !important;
+}
+
+.modcp_nav_item:before{
+    color: #A0A0A0  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #A0A0A0  !important;
+}
+
+i.panel-modcp {
+	color: #A0A0A0  !important;
+}
+
+i.panel-admincp {
+	color: #A0A0A0  !important;
+}
+
+.sharethread a:link {
+	color: #426276 !important;
+}
+
+.sharethread a:visited {
+	color: #426276 !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #273a46 !important;
+}
+
+.progress {
+	background: #273a46 url('themes/FA6Dark/colors/twilight_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #426276 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #426276 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #426276;
+}
+
+#logo {
+	background: #273a46 url(themes/FA6Dark/colors/twilight_header.png) top left repeat-x;
+	border-bottom: 1px solid #1d2b34;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #273a46 url(themes/FA6Dark/colors/twilight_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #273a46;
+}
+
+.forum_on {
+color: #A0A0A0;
+}
+
+.subforum_minion {
+	color: #A0A0A0;
+}
+
+.thead {
+	background: #273a46 url(themes/FA6Dark/colors/twilight_thead.png) top left repeat-x;
+	border-bottom: 1px solid #1d2b34;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #1d2b34;
+}
+
+.popup_menu .popup_item:hover {
+	background: #426276;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #426276;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #426276;
+	color: #fff;
+	border-color: #1d2b34;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_water.css" attachedto="water" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_water.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #1e6365;
+}
+
+input[type=checkbox]:checked:before {
+    color: #1e6365;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #1e6365;
+	-webkit-box-shadow: inset 0 1px 1px rgb(30,99,101), 0 0 8px rgba(30,99,101, 0.8);
+	box-shadow: inset 0 1px 1px rgba(30,99,101, 0.8), 0 0 8px rgba(30,99,101, 0.8);
+}
+
+input.login {
+	border: 5px solid #1e6365;
+
+}
+
+input.login:hover {
+	background: #1e6365;
+}
+
+i.lostpwd {
+   color: #1e6365;
+}
+
+i.printer {
+	color: #1e6365;
+}
+
+i.sendto {
+	color: #1e6365;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #1e6365;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #1e6365  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #1e6365  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #1e6365  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #1e6365  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #1e6365  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #1e6365  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #1e6365  !important;
+}
+
+.usercp_nav_item::before {
+	color: #1e6365  !important;
+}
+
+.modcp_nav_item:before{
+    color: #1e6365  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #1e6365  !important;
+}
+
+i.panel-modcp {
+	color: #1e6365  !important;
+}
+
+i.panel-admincp {
+	color: #1e6365  !important;
+}
+
+.sharethread a:link {
+	color: #2d9595 !important;
+}
+
+.sharethread a:visited {
+	color: #2d9595 !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #1e6365 !important;
+}
+
+.progress {
+	background: #1e6365 url('themes/FA6Dark/colors/water_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #2d9595 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #2d9595 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #2d9595;
+}
+
+#logo {
+	background: #1e6365 url(themes/FA6Dark/colors/water_header.png) top left repeat-x;
+	border-bottom: 1px solid #133f41;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #1e6365 url(themes/FA6Dark/colors/water_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #1e6365;
+}
+
+.forum_on {
+color: #1e6365;
+}
+
+.subforum_minion {
+	color: #1e6365;
+}
+
+.thead {
+	background: #1e6365 url(themes/FA6Dark/colors/water_thead.png) top left repeat-x;
+	border-bottom: 1px solid #133f41;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #133f41;
+}
+
+.popup_menu .popup_item:hover {
+	background: #2d9595;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #2d9595;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #2d9595;
+	color: #fff;
+	border-color: #133f41;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_flame.css" attachedto="flame" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_flame.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #A0A0A0;
+}
+
+input[type=checkbox]:checked:before {
+    color: #A0A0A0;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #750000;
+	-webkit-box-shadow: inset 0 1px 1px rgb(117,0,0), 0 0 8px rgba(117,0,0, 0.8);
+	box-shadow: inset 0 1px 1px rgba(117,0,0, 0.8), 0 0 8px rgba(117,0,0, 0.8);
+}
+
+input.login {
+	border: 5px solid #750000;
+
+}
+
+input.login:hover {
+	background: #750000;
+}
+
+i.lostpwd {
+   color: #750000;
+}
+
+i.printer {
+	color: #750000;
+}
+
+i.sendto {
+	color: #750000;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #A0A0A0  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #A0A0A0  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #A0A0A0  !important;
+}
+
+.usercp_nav_item::before {
+	color: #A0A0A0  !important;
+}
+
+.modcp_nav_item:before{
+    color: #A0A0A0  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #A0A0A0  !important;
+}
+
+i.panel-modcp {
+	color: #A0A0A0  !important;
+}
+
+i.panel-admincp {
+	color: #A0A0A0  !important;
+}
+
+.sharethread a:link {
+	color: #a20000 !important;
+}
+.sharethread a:visited {
+	color: #a20000 !important;
+}
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #750000  !important;
+}
+
+.progress {
+	background: #750000 url('themes/FA6Dark/colors/flame_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #a20000 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #a20000 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #a20000;
+}
+
+#logo {
+	background: #750000 url(themes/FA6Dark/colors/flame_header.png) top left repeat-x;
+	border-bottom: 1px solid #550000;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #750000 url(themes/FA6Dark/colors/flame_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #750000;
+}
+
+.forum_on {
+color: #750000;
+}
+
+.subforum_minion {
+	color: #750000;
+}
+
+.thead {
+	background: #750000 url(themes/FA6Dark/colors/flame_thead.png) top left repeat-x;
+	border-bottom: 1px solid #550000;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #550000;
+}
+
+.popup_menu .popup_item:hover {
+	background: #a20000;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #a20000;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #a20000;
+	color: #fff;
+	border-color: #550000;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_leaf.css" attachedto="leaf" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_leaf.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #386e21;
+}
+
+input[type=checkbox]:checked:before {
+    color: #386e21;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #386e21;
+	-webkit-box-shadow: inset 0 1px 1px rgb(56,110,33), 0 0 8px rgba(56,110,33, 0.8);
+	box-shadow: inset 0 1px 1px rgba(56,110,33, 0.8), 0 0 8px rgba(56,110,33, 0.8);
+}
+
+input.login {
+	border: 5px solid #386e21;
+
+}
+
+input.login:hover {
+	background: #386e21;
+}
+
+i.lostpwd {
+   color: #386e21;
+}
+
+i.printer {
+	color: #386e21;
+}
+
+i.sendto {
+	color: #386e21;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #386e21;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #386e21  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #386e21  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #386e21  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #386e21  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #386e21  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #386e21  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #386e21  !important;
+}
+
+.usercp_nav_item::before {
+	color: #386e21  !important;
+}
+
+.modcp_nav_item:before{
+    color: #386e21  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #386e21  !important;
+}
+
+i.panel-modcp {
+	color: #386e21  !important;
+}
+
+i.panel-admincp {
+	color: #386e21  !important;
+}
+
+.sharethread a:link {
+	color: #5aaf33 !important;
+}
+
+.sharethread a:visited {
+	color: #5aaf33 !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #386e21  !important;
+}
+
+.progress {
+	background: #386e21 url('themes/FA6Dark/colors/leaf_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #5aaf33 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #5aaf33 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #5aaf33;
+}
+
+#logo {
+	background: #386e21 url(themes/FA6Dark/colors/leaf_header.png) top left repeat-x;
+	border-bottom: 1px solid #234615;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #386e21 url(themes/FA6Dark/colors/leaf_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #386e21;
+}
+
+.forum_on {
+color: #386e21;
+}
+
+.subforum_minion {
+	color: #386e21;
+}
+
+.thead {
+	background: #386e21 url(themes/FA6Dark/colors/leaf_thead.png) top left repeat-x;
+	border-bottom: 1px solid #234615;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #234615;
+}
+
+.popup_menu .popup_item:hover {
+	background: #5aaf33;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #5aaf33;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #5aaf33;
+	color: #fff;
+	border-color: #234615;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="color_night.css" attachedto="night" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: color_night.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/** Checkboxes **/ 
+
+input[type=checkbox]:after, input[type=radio]:after {
+    color: #202020;
+}
+
+input[type=radio]:checked:after {
+    color: #A0A0A0;
+}
+
+input[type=checkbox]:checked:before {
+    color: #A0A0A0;
+}
+
+/** Login **/
+
+input#quick_login_username:focus, input#quick_login_password:focus {
+	border-color: #A0A0A0;
+	-webkit-box-shadow: inset 0 1px 1px rgb(160,160,160), 0 0 8px rgba(160,160,160, 0.8);
+	box-shadow: inset 0 1px 1px rgba(160,160,160, 0.8), 0 0 8px rgba(160,160,160, 0.8);
+}
+
+input.login {
+	border: 5px solid #A0A0A0;
+
+}
+
+input.login:hover {
+	background: #A0A0A0;
+}
+
+i.lostpwd {
+   color: #A0A0A0;
+}
+
+i.printer {
+	color: #fff;
+}
+
+i.sendto {
+	color: #fff;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+
+ul.thread_tools li.printable:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.sendthread:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.subscription_add:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.subscription_remove:after {
+	color: #A0A0A0  !important;
+}
+
+ul.thread_tools li.poll:after {
+	color: #A0A0A0  !important;
+}
+
+.trow1 a:hover, .trow1 a:active {
+	color: #A0A0A0  !important;
+}
+
+.trow2 a:hover, .trow2 a:active {
+	color: #A0A0A0  !important;
+}
+
+.usercp_nav_item::before {
+	color: #A0A0A0  !important;
+}
+
+.modcp_nav_item:before{
+    color: #A0A0A0  !important;
+}
+
+i.toplinks-portal {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-search {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-memberlist {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-calendar {
+	color: #FFFFFF !important;
+}
+
+i.toplinks-help {
+	color: #FFFFFF !important;
+}
+
+i.panel-register {
+	color: #98C78B !important;
+}
+
+i.panel-login {
+	color: #C49A38 !important;
+}
+
+i.panel-logout {
+	color: #98C78B !important;
+}
+
+i.panel-usercp {
+	color: #A0A0A0  !important;
+}
+
+i.panel-modcp {
+	color: #A0A0A0  !important;
+}
+
+i.panel-admincp {
+	color: #A0A0A0  !important;
+}
+
+.sharethread a:link {
+	color: #023a61 !important;
+}
+
+.sharethread a:visited {
+	color: #023a61 !important;
+}
+
+.sharethread a:hover,
+.sharethread a:active {
+	color: #333 !important;
+}
+
+.progress_bar {
+	border: 1px solid #022338 !important;
+}
+
+.progress {
+	background: #022338 url('themes/FA6Dark/colors/night_thead.png') center repeat-x !important;
+}
+
+#backtop a:link {
+	color: #023a61 !important;
+	text-decoration: none;
+}
+
+#backtop a:visited {
+	color: #023a61 !important;
+	text-decoration: none;
+}
+
+#backtop a:hover, a:active {
+	color: #A0A0A0 !important;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #023a61;
+}
+
+#logo {
+	background: #022338 url(themes/FA6Dark/colors/night_header.png) top left repeat-x;
+	border-bottom: 1px solid #011929;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #022338 url(themes/FA6Dark/colors/night_thead.png) top left repeat-x;
+}
+
+#panel .lower ul.user_links li a:hover {
+   color: #022338;
+}
+
+.forum_on {
+color: #A0A0A0;
+}
+
+.subforum_minion {
+	color: #A0A0A0;
+}
+
+.thead {
+	background: #022338 url(themes/FA6Dark/colors/night_thead.png) top left repeat-x;
+	border-bottom: 1px solid #011929;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #011929;
+}
+
+.popup_menu .popup_item:hover {
+	background: #023a61;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #023a61;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #023a61;
+	color: #fff;
+	border-color: #011929;
+}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="extras.css" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: extras.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ *        
+ */ 
+
+/* Quick & basic converting to responsiveness tutorial by: V */
+
+/* postbit classic */
+
+.authpostcontent {
+    overflow: hidden;
+}
+
+.authinfo {
+	border: 1px solid #303030;
+	background: #252525;
+	color: #A0A0A0;	
+	float: left;
+	width: 15%;
+	margin: 0 1% 15px 0;
+	border-left: 0;
+	padding: 5px 1%;
+	-moz-border-radius: 0 6px 6px 0;
+	-webkit-border-radius: 0 6px 6px 0;
+	border-radius: 0 6px 6px 0;	
+}
+
+.authinfo:active,
+.authinfo:hover{
+	border: 1px solid #252525;
+	background: #303030;
+}
+
+/*@media only screen and (max-width: 420px) {*/
+
+@media (max-width: 768px) {
+	
+.post.classic {
+    padding-top: 0px;	
+}
+	
+.authinfo{
+    border: 0 none;
+    float: none;
+    margin-right: 0;
+    width: auto;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;	
+	border-bottom: #303030 1px solid;
+}
+}
+
+/* Hide span */
+
+.threads_show, .posts_show {
+     display: none !important;
+}
+
+.replies_show, .views_show {
+     display: none !important;
+}
+
+.thread_show, .author_show {
+     display: none !important;
+}
+
+.folder_show, .post_icon_show {
+     display: none !important;
+}
+
+.last_post_show{
+     display: none !important;
+}
+
+.ucp_show {
+     display: none !important;
+}
+
+.mcp_show {
+     display: none !important;
+}
+
+.rating_show {
+     display: none !important;
+}
+
+@media only screen and (max-width: 868px) {
+/*	
+.select-wrap {
+  display: inline-block;
+}
+
+.select-wrap:before {
+   top: 4px;
+}	
+*/	
+body {
+     overflow-x: hidden !important;
+     overflow-y: scroll !important;
+}
+	
+/* textarea tweaks */
+	
+html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > fieldset.trow2 > textarea {
+     width: 95% !important;
+}	
+	
+html > body > div#container > div#content > div.wrapper > table > tbody > tr > td > form > table.tborder > tbody > tr > td.trow2 > textarea {
+     width: 95% !important;
+}	
+
+textarea {
+    width: 95% !important;
+}	
+	
+/* modal */
+	
+.modal {
+     width: 300px !important;
+}
+	
+/* logo */
+	
+#logo {
+     padding-bottom: 10px !important;	
+     text-align: center !important;
+     float: none !important;
+}
+	
+#logo img {
+     padding-bottom: 15px;
+}
+	
+/* table */
+	
+table td {
+     background: transparent;
+     padding: 3px;
+     text-align: left !important;
+     float: none !important;
+     border-top: 0px !important;
+     border-left: 0px !important;
+     border-bottom: 1px solid: #DDDDDD;
+     display: block !important;	
+     width: auto !important;
+     font-size: 13px !important;	
+     overflow:hidden;
+}
+
+/* new/edit post/reply/announcement/pmcompose/calendaraddevent smilies display tweak */
+	
+.clickable_smilies > tbody {
+     display: inline-flex !important;
+}
+	
+.clickable_smilies > tbody > tr > td{
+     text-align: center !important;
+     padding: 20px;
+     display: inline-block !important;
+}
+	
+/* F-b & F-i tweaks */
+	
+form#buddy {
+     width: unset !important;
+}
+	
+form#ignored {
+      width: unset !important;
+}
+
+/* star rating float left */
+	
+.star_rating {
+     float: left !important;
+}		
+	
+/* index legend */
+	
+.forum_legend dt {
+     float: unset !important; 
+     padding: 5px !important;	 
+}
+	
+.forum_legend dd {	
+     margin-left: 55px !important;
+     margin-top: -35px !important;	 
+}	
+	
+/* ucp avatar border */
+	
+.usercp_container {
+     width: 101px;
+}
+
+/* footer links */ 
+	
+#footer .upper ul.bottom_links {
+     float: unset !important;
+     display: inline-grid !important;	
+}
+	
+/* tcat tweaks */
+
+/* overall tcat display */
+	
+.tcat {
+     display: none !important; 
+}
+
+/* UserCP & ModCP nav tcat display */
+	
+.cpshow {
+     display: block !important; 
+}
+	
+/* Search Results check tcat display */
+	
+.srcshow {
+     display: block !important; 
+}	
+	
+/* whosonline tcat  display */	
+	
+.wolshow {
+     display: block !important; 
+}
+	
+/* cal event tcat display */
+	
+.tcalshow {
+     display: flow !important; 
+}
+	
+
+/* thread & posts span for mobile */
+	
+.threads_show, .posts_show {
+     display: inline-block !important; 	
+}
+	
+/* replies & views span for mobile */
+	
+.replies_show, .views_show {
+     display: inline-block !important; 	
+}
+
+/* thread & author span for mobile */
+	
+.thread_show, .author_show {
+     display: inline-block !important; 	
+}
+
+/* folder & post icon span for mobile */
+	
+.folder_show, .post_icon_show {
+     display: inline-block !important; 	
+}
+	
+/* last post span for mobile */
+	
+.last_post_show {
+     display: inline-block !important; 	
+}
+
+/* ucp span for mobile */
+	
+.ucp_show {
+     display: inline-block !important; 	
+}
+
+/* mcp span for mobile */
+	
+.mcp_show {
+     display: inline-block !important; 	
+}
+
+/* ucpcheck span for mobile */
+	
+.ucpcheck_show {
+     display: flow !important; 	
+}
+
+/* mcpcheck span for mobile */
+	
+.mcpcheck_show {
+     display: flow !important; 	
+}
+	
+/* rating span for mobile */
+	
+.rating_show {
+     display: block !important; 	
+}
+	
+}
+
+@media (max-width:768px) {
+	
+/* Postbit button scaling */
+
+.post_controls {
+     text-align: center;
+}
+
+.postbit_buttons a span {
+     font-size: 0px;
+}
+
+.postbit_buttons a span:before {
+     margin: 0;
+}
+
+.postbit_buttons > a:link, .postbit_buttons > a:hover, .postbit_buttons > a:visited, .postbit_buttons > a:active {
+     padding: 3px 7px;
+}
+
+/* toplinks tweak */
+	
+#logo ul.top_links {	
+     text-align: center !important;
+     display: flow !important;
+}
+
+}
+
+@media (max-width:360px) {
+		
+/* select tweaks */
+	
+html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > div#s2id_to.select2-container.select2-container-multi > ul.select2-choices {
+     width: 105px !important;
+}
+
+html > body > div#select2-drop.select2-drop.select2-drop-multi.select2-display-none.select2-drop-active {
+     width: 112px !important;	
+}	
+
+.select2-container, .select2-drop, .select2-search, .select2-search input {
+     width: 115px !important;
+}
+
+/* first */
+
+select {
+     display: block !important;
+     max-width: 180px !important;
+}
+	
+}
+
+@media (max-width:375px) {
+
+/* wrapper tweak */
+	
+.wrapper {
+     width: unset !important;
+     margin: unset !important;
+}
+	
+}
+
+@media (min-width:375px)  {
+	
+/* select tweaks */
+	
+html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > div#s2id_to.select2-container.select2-container-multi > ul.select2-choices {
+     width: 120px !important;
+}
+
+html > body > div#select2-drop.select2-drop.select2-drop-multi.select2-display-none.select2-drop-active {
+     width: 127px !important;	
+}	
+
+.select2-container, .select2-drop, .select2-search, .select2-search input {
+     width: 130px !important;
+}
+
+/* second */
+
+select {
+     display: block !important;
+     max-width: 190px !important;
+}
+	
+}
+
+@media (min-width:414px) {
+	
+/* select tweaks */
+	
+html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > div#s2id_to.select2-container.select2-container-multi > ul.select2-choices {
+     width: 159px !important;
+}
+
+html > body > div#select2-drop.select2-drop.select2-drop-multi.select2-display-none.select2-drop-active {
+     width: 166px !important;	
+}	
+
+.select2-container, .select2-drop, .select2-search, .select2-search input {
+     width: 167px !important;
+}
+
+/* last */
+
+select {
+     display: block !important;
+     max-width: 200px !important;
+}
+	
+}
+
+@media (min-width:868px) {
+	
+/* slhide span search for mobile */
+	
+.slhide {
+     display: none !important;
+}	
+			
+/* mlhide span for mobile */
+	
+.mlhide {
+     display: none !important;
+}
+	
+/* sthide span for mobile */
+	
+.sthide {
+     display: none !important;
+}
+	
+/* final */
+
+select {
+     display: unset !important;
+}
+	
+}
+
+/* portal tborder */
+
+.tborder_portal {
+	background: #282828;
+	width: 100%;
+	margin: auto auto;
+	border: 1px solid #282828;
+	padding: 1px;
+}
+
+/* end */
+
+/* start */
+
+/* Basic Calendar Responsiveness Tutorial by: V */
+
+@media (max-width:768px) {
+
+.weekday_day_name strong {
+    display: none;
+}
+
+.calendar .tcat[width*="1"] {
+    padding: 1px;
+}
+
+/* English */
+
+[title="Sunday"]:after {
+    content: 'Sun';
+}
+
+[title="Monday"]:after {
+    content: 'Mon';
+}
+
+[title="Tuesday"]:after {
+    content: 'Tue';
+}
+
+[title="Wednesday"]:after {
+    content: 'Wed';
+}
+
+[title="Thursday"]:after {
+    content: 'Thu';
+}
+
+[title="Friday"]:after {
+    content: 'Fri';
+}
+
+[title="Saturday"]:after {
+    content: 'Sat';
+}
+
+/* French */
+
+[title="Dimanche"]:after {
+    content: 'Dim';
+}
+
+[title="Lundi"]:after {
+    content: 'Lun';
+}
+
+[title="Mardi"]:after {
+    content: 'Mar';
+}
+
+[title="Mercredi"]:after {
+    content: 'Mer';
+}
+
+[title="Jeudi"]:after {
+    content: 'Jeu';
+}
+
+[title="Vendredi"]:after {
+    content: 'Ven';
+}
+
+[title="Samedi"]:after {
+    content: 'Sam';
+}
+
+/* Spanish */
+
+[title="Domingo"]:after {
+    content: 'Dom';
+}
+
+[title="Lunes"]:after {
+    content: 'Lun';
+}
+
+[title="Martes"]:after {
+    content: 'Mar';
+}
+
+[title="Miércoles"]:after {
+    content: 'Mié';
+}
+
+[title="Jueves"]:after {
+    content: 'Jue';
+}
+
+[title="Viernes"]:after {
+    content: 'Vie';
+}
+
+[title="Sábado"]:after {
+    content: 'Sáb';
+}
+
+/* Italian */
+
+[title="Domenica"]:after {
+    content: 'Dom';
+}
+
+[title="Lunedì"]:after {
+    content: 'Lun';
+}
+
+[title="Martedì"]:after {
+    content: 'Mar';
+}
+
+[title="Mercoledì"]:after {
+    content: 'Merc';
+}
+
+[title="Giovedì"]:after {
+    content: 'Gio';
+}
+
+[title="Venerdì"]:after {
+    content: 'Ven';
+}
+
+[title="Sabato"]:after {
+    content: 'Sab';
+}
+
+/* add your additional langs here */
+
+
+.weekday_day_height {
+    height: 0px;
+}
+}
+
+@media (min-width:768px) {
+.weekday_day_height {
+    height: 100px;  
+}
+}
+
+@media (max-width:800px)  {
+.weekday_day_height {
+    height: 60px;  
+}
+}
+
+@media (max-width:600px)  {
+.weekday_day_height {
+    height: 50px;  
+}
+}
+
+@media (max-width:480px) {
+.weekday_day_height {
+    height: 40px;  
+}
+}
+
+@media (max-width:320px) {
+.weekday_day_height {
+    height: 30px;  
+}
+}	
+/* end */
+
+/* Tweak for Poll */
+@media (max-width: 868px) {
+    table {
+        table-layout: auto !important;
+    }
+    colgroup > col {
+        width: 100% !important;
+    }
+}		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="css3.css" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: css3.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+/* portal tborder */
+
+.tborder_portal {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+tr td.trow1:first-child,
+tr td.trow2:first-child,
+tr td.trow_shaded:first-child {
+	border-left: 0;
+}
+
+tr td.trow1:last-child,
+tr td.trow2:last-child,
+tr td.trow_shaded:last-child {
+	border-right: 0;
+}
+
+.tborder {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.tborder tbody tr:last-child > td {
+	border-bottom: 0;
+}
+
+.tborder tbody tr:last-child > td:first-child {
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.tborder tbody tr:last-child > td:last-child {
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.thead {
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.thead_collapsed {
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.thead_left {
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.thead_right {
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.tcat_menu {
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.tborder tbody:nth-last-child(2) .tcat_collapse_collapsed {
+	-moz-border-radius-bottomleft: 3px !important;
+	-moz-border-radius-bottomright: 3px !important;
+	-webkit-border-bottom-left-radius: 3px !important;
+	-webkit-border-bottom-right-radius: 3px !important;
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+}
+
+button,
+input.button,
+input.textbox,
+input.invalid_field,
+input.valid_field,
+select,
+textarea,
+.editor_control_bar,
+blockquote,
+.codeblock,
+fieldset,
+.pm_alert,
+.red_alert,
+.popup_menu,
+.postbit_buttons > a,
+a.button {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.post.classic .post_author {
+	-moz-border-radius: 0 3px 3px 0;
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.popup_menu .popup_item_container:first-child .popup_item {
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.popup_menu .popup_item_container:last-child .popup_item {
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.pagination a {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.pollbar {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+div.error {
+	-moz-border-radius: 3px;
+    	-webkit-border-radius: 3px;
+   	 border-radius: 3px;
+}
+
+button, input.button, input.textbox, input.invalid_field, input.valid_field, select, textarea, .editor_control_bar, blockquote, .codeblock, fieldset, .pm_alert, .red_alert, .popup_menu, .postbit_buttons > a, a.button {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="gidpostborder.css" version="1839"><![CDATA[/*
+ * MyBB: FA6Dark Frontend Theme 
+ *
+ * File: gidpostborder.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ *        
+ */ 
+
+/** Gid Postbody Border CSS  **/
+
+/** All if needed **/
+
+.gidpostborder {
+	margin-top: 6px;
+	margin-left: 4px;
+	margin-right: 4px;	
+	margin-bottom: 6px;
+    padding: 0;
+}
+
+/** Define by group id **/
+
+/** Active **/
+
+.gidpostborder_4 {
+/* define border gid 4 Admin*/
+	border: 1px solid #008000;
+	-webkit-box-shadow: inset 0 1px 1px rgb(0,128,0), 0 0 8px rgba(0,128,0, 0.8);
+	box-shadow: inset 0 1px 1px rgba(0,128,0, 0.8), 0 0 8px rgba(0,128,0, 0.8); 
+}
+
+.gidpostborder_4:active,
+.gidpostborder_4:hover {
+/* define border gid 4 Admin */
+   border: 1px dashed #008000;
+}
+
+.gidpostborder_6 {
+/* define border gid 6 Moderator */
+   border: 1px solid #CC00CC;
+	-webkit-box-shadow: inset 0 1px 1px rgb(204,0,204), 0 0 8px rgba(204,0,204, 0.8);
+	box-shadow: inset 0 1px 1px rgba(204,0,204, 0.8), 0 0 8px rgba(204,0,204, 0.8);
+}
+
+.gidpostborder_6:active,
+.gidpostborder_6:hover {
+/* define border gid 6 Moderator */
+   border: 1px dashed #CC00CC;
+}
+
+.gidpostborder_3 {
+/* define border gid 3 Super Moderator */
+   border: 1px solid #CC00CC;
+	-webkit-box-shadow: inset 0 1px 1px rgb(204,0,204), 0 0 8px rgba(204,0,204, 0.8);
+	box-shadow: inset 0 1px 1px rgba(204,0,204, 0.8), 0 0 8px rgba(204,0,204, 0.8);
+}
+
+.gidpostborder_3:active,
+.gidpostborder_3:hover {
+/* define border gid 3 Super Moderator */
+   border: 1px dashed #CC00CC;
+}
+
+.gidpostborder_2 {
+/* define border gid 2 Registered */
+	border: 1px solid #0072BF;
+	-webkit-box-shadow: inset 0 1px 1px rgb(0,114,191), 0 0 8px rgba(0,114,191, 0.8);
+	box-shadow: inset 0 1px 1px rgba(0,114,191, 0.8), 0 0 8px rgba(0,114,191, 0.8);
+}
+
+.gidpostborder_2:active,
+.gidpostborder_2:hover {
+/* define border gid 2 Registered */
+   border: 1px dashed #0072BF; 
+}
+
+/** Post Hover **/
+
+/*
+.post.classic > .authinfo {
+	border-top: 1px solid #303030 !important;
+}
+*/
+
+.post > .post_author {
+	border-top: 1px solid #202020 !important;
+}
+
+.post_content:active, .post_controls:active, .post_author:active,
+.post_content:hover, .post_controls:hover, .post_author:hover {
+	background: #303030 !important;
+}
+
+.post.classic > .authpostcontent:active,
+.post.classic > .authpostcontent:hover {
+   background: #303030 !important;
+   border: 1px solid #202020;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;	
+}
+
+/*
+.post.classic:active,
+.post.classic:hover {
+   background: #181818 !important;
+   border: 1px solid #303030;
+}
+*/
+
+.post.classic > .authpostcontent {
+   padding:  1% 1% 5px 1% !important;
+   margin: 5px;
+}
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
 		<stylesheet name="global.css" version="1839"><![CDATA[/*
  * MyBB: FA6Dark Frontend Theme 
  *
@@ -2746,4617 +7376,6 @@ div.jqi .jqisubstate .jqibuttons button{
 		
 		
 		
-		]]>
-		</stylesheet>
-		<stylesheet name="gidpostborder.css" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: gidpostborder.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- *        
- */ 
-
-/** Gid Postbody Border CSS  **/
-
-/** All if needed **/
-
-.gidpostborder {
-	margin-top: 6px;
-	margin-left: 4px;
-	margin-right: 4px;	
-	margin-bottom: 6px;
-    padding: 0;
-}
-
-/** Define by group id **/
-
-/** Active **/
-
-.gidpostborder_4 {
-/* define border gid 4 Admin*/
-	border: 1px solid #008000;
-	-webkit-box-shadow: inset 0 1px 1px rgb(0,128,0), 0 0 8px rgba(0,128,0, 0.8);
-	box-shadow: inset 0 1px 1px rgba(0,128,0, 0.8), 0 0 8px rgba(0,128,0, 0.8); 
-}
-
-.gidpostborder_4:active,
-.gidpostborder_4:hover {
-/* define border gid 4 Admin */
-   border: 1px dashed #008000;
-}
-
-.gidpostborder_6 {
-/* define border gid 6 Moderator */
-   border: 1px solid #CC00CC;
-	-webkit-box-shadow: inset 0 1px 1px rgb(204,0,204), 0 0 8px rgba(204,0,204, 0.8);
-	box-shadow: inset 0 1px 1px rgba(204,0,204, 0.8), 0 0 8px rgba(204,0,204, 0.8);
-}
-
-.gidpostborder_6:active,
-.gidpostborder_6:hover {
-/* define border gid 6 Moderator */
-   border: 1px dashed #CC00CC;
-}
-
-.gidpostborder_3 {
-/* define border gid 3 Super Moderator */
-   border: 1px solid #CC00CC;
-	-webkit-box-shadow: inset 0 1px 1px rgb(204,0,204), 0 0 8px rgba(204,0,204, 0.8);
-	box-shadow: inset 0 1px 1px rgba(204,0,204, 0.8), 0 0 8px rgba(204,0,204, 0.8);
-}
-
-.gidpostborder_3:active,
-.gidpostborder_3:hover {
-/* define border gid 3 Super Moderator */
-   border: 1px dashed #CC00CC;
-}
-
-.gidpostborder_2 {
-/* define border gid 2 Registered */
-	border: 1px solid #0072BF;
-	-webkit-box-shadow: inset 0 1px 1px rgb(0,114,191), 0 0 8px rgba(0,114,191, 0.8);
-	box-shadow: inset 0 1px 1px rgba(0,114,191, 0.8), 0 0 8px rgba(0,114,191, 0.8);
-}
-
-.gidpostborder_2:active,
-.gidpostborder_2:hover {
-/* define border gid 2 Registered */
-   border: 1px dashed #0072BF; 
-}
-
-/** Post Hover **/
-
-/*
-.post.classic > .authinfo {
-	border-top: 1px solid #303030 !important;
-}
-*/
-
-.post > .post_author {
-	border-top: 1px solid #202020 !important;
-}
-
-.post_content:active, .post_controls:active, .post_author:active,
-.post_content:hover, .post_controls:hover, .post_author:hover {
-	background: #303030 !important;
-}
-
-.post.classic > .authpostcontent:active,
-.post.classic > .authpostcontent:hover {
-   background: #303030 !important;
-   border: 1px solid #202020;
-   border-radius: 3px;
-   -moz-border-radius: 3px;
-   -webkit-border-radius: 3px;	
-}
-
-/*
-.post.classic:active,
-.post.classic:hover {
-   background: #181818 !important;
-   border: 1px solid #303030;
-}
-*/
-
-.post.classic > .authpostcontent {
-   padding:  1% 1% 5px 1% !important;
-   margin: 5px;
-}
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="css3.css" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: css3.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/* portal tborder */
-
-.tborder_portal {
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-}
-
-tr td.trow1:first-child,
-tr td.trow2:first-child,
-tr td.trow_shaded:first-child {
-	border-left: 0;
-}
-
-tr td.trow1:last-child,
-tr td.trow2:last-child,
-tr td.trow_shaded:last-child {
-	border-right: 0;
-}
-
-.tborder {
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-}
-
-.tborder tbody tr:last-child > td {
-	border-bottom: 0;
-}
-
-.tborder tbody tr:last-child > td:first-child {
-	-moz-border-radius-bottomleft: 3px;
-	-webkit-border-bottom-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-}
-
-.tborder tbody tr:last-child > td:last-child {
-	-moz-border-radius-bottomright: 3px;
-	-webkit-border-bottom-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-}
-
-.thead {
-	-moz-border-radius-topleft: 3px;
-	-moz-border-radius-topright: 3px;
-	-webkit-border-top-left-radius: 3px;
-	-webkit-border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-}
-
-.thead_collapsed {
-	-moz-border-radius-bottomleft: 3px;
-	-moz-border-radius-bottomright: 3px;
-	-webkit-border-bottom-left-radius: 3px;
-	-webkit-border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
-}
-
-.thead_left {
-	-moz-border-radius-topright: 0;
-	-webkit-border-top-right-radius: 0;
-	border-top-right-radius: 0;
-}
-
-.thead_right {
-	-moz-border-radius-topleft: 0;
-	-webkit-border-top-left-radius: 0;
-	border-top-left-radius: 0;
-}
-
-.tcat_menu {
-	-moz-border-radius: 0 !important;
-	-webkit-border-radius: 0 !important;
-	border-radius: 0 !important;
-}
-
-.tborder tbody:nth-last-child(2) .tcat_collapse_collapsed {
-	-moz-border-radius-bottomleft: 3px !important;
-	-moz-border-radius-bottomright: 3px !important;
-	-webkit-border-bottom-left-radius: 3px !important;
-	-webkit-border-bottom-right-radius: 3px !important;
-	border-bottom-left-radius: 3px !important;
-	border-bottom-right-radius: 3px !important;
-}
-
-button,
-input.button,
-input.textbox,
-input.invalid_field,
-input.valid_field,
-select,
-textarea,
-.editor_control_bar,
-blockquote,
-.codeblock,
-fieldset,
-.pm_alert,
-.red_alert,
-.popup_menu,
-.postbit_buttons > a,
-a.button {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-
-.post.classic .post_author {
-	-moz-border-radius: 0 3px 3px 0;
-	-webkit-border-radius: 0 3px 3px 0;
-	border-radius: 0 3px 3px 0;
-}
-
-.popup_menu .popup_item_container:first-child .popup_item {
-	-moz-border-radius-topleft: 3px;
-	-moz-border-radius-topright: 3px;
-	-webkit-border-top-left-radius: 3px;
-	-webkit-border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-}
-
-.popup_menu .popup_item_container:last-child .popup_item {
-	-moz-border-radius-bottomleft: 3px;
-	-moz-border-radius-bottomright: 3px;
-	-webkit-border-bottom-left-radius: 3px;
-	-webkit-border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
-}
-
-.pagination a {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-
-.pollbar {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-
-div.error {
-	-moz-border-radius: 3px;
-    	-webkit-border-radius: 3px;
-   	 border-radius: 3px;
-}
-
-button, input.button, input.textbox, input.invalid_field, input.valid_field, select, textarea, .editor_control_bar, blockquote, .codeblock, fieldset, .pm_alert, .red_alert, .popup_menu, .postbit_buttons > a, a.button {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="extras.css" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: extras.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- *        
- */ 
-
-/* Quick & basic converting to responsiveness tutorial by: V */
-
-/* postbit classic */
-
-.authpostcontent {
-    overflow: hidden;
-}
-
-.authinfo {
-	border: 1px solid #303030;
-	background: #252525;
-	color: #A0A0A0;	
-	float: left;
-	width: 15%;
-	margin: 0 1% 15px 0;
-	border-left: 0;
-	padding: 5px 1%;
-	-moz-border-radius: 0 6px 6px 0;
-	-webkit-border-radius: 0 6px 6px 0;
-	border-radius: 0 6px 6px 0;	
-}
-
-.authinfo:active,
-.authinfo:hover{
-	border: 1px solid #252525;
-	background: #303030;
-}
-
-/*@media only screen and (max-width: 420px) {*/
-
-@media (max-width: 768px) {
-	
-.post.classic {
-    padding-top: 0px;	
-}
-	
-.authinfo{
-    border: 0 none;
-    float: none;
-    margin-right: 0;
-    width: auto;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	border-radius: 0;	
-	border-bottom: #303030 1px solid;
-}
-}
-
-/* Hide span */
-
-.threads_show, .posts_show {
-     display: none !important;
-}
-
-.replies_show, .views_show {
-     display: none !important;
-}
-
-.thread_show, .author_show {
-     display: none !important;
-}
-
-.folder_show, .post_icon_show {
-     display: none !important;
-}
-
-.last_post_show{
-     display: none !important;
-}
-
-.ucp_show {
-     display: none !important;
-}
-
-.mcp_show {
-     display: none !important;
-}
-
-.rating_show {
-     display: none !important;
-}
-
-@media only screen and (max-width: 868px) {
-/*	
-.select-wrap {
-  display: inline-block;
-}
-
-.select-wrap:before {
-   top: 4px;
-}	
-*/	
-body {
-     overflow-x: hidden !important;
-     overflow-y: scroll !important;
-}
-	
-/* textarea tweaks */
-	
-html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > fieldset.trow2 > textarea {
-     width: 95% !important;
-}	
-	
-html > body > div#container > div#content > div.wrapper > table > tbody > tr > td > form > table.tborder > tbody > tr > td.trow2 > textarea {
-     width: 95% !important;
-}	
-
-textarea {
-    width: 95% !important;
-}	
-	
-/* modal */
-	
-.modal {
-     width: 300px !important;
-}
-	
-/* logo */
-	
-#logo {
-     padding-bottom: 10px !important;	
-     text-align: center !important;
-     float: none !important;
-}
-	
-#logo img {
-     padding-bottom: 15px;
-}
-	
-/* table */
-	
-table td {
-     background: transparent;
-     padding: 3px;
-     text-align: left !important;
-     float: none !important;
-     border-top: 0px !important;
-     border-left: 0px !important;
-     border-bottom: 1px solid: #DDDDDD;
-     display: block !important;	
-     width: auto !important;
-     font-size: 13px !important;	
-     overflow:hidden;
-}
-
-/* new/edit post/reply/announcement/pmcompose/calendaraddevent smilies display tweak */
-	
-.clickable_smilies > tbody {
-     display: inline-flex !important;
-}
-	
-.clickable_smilies > tbody > tr > td{
-     text-align: center !important;
-     padding: 20px;
-     display: inline-block !important;
-}
-	
-/* F-b & F-i tweaks */
-	
-form#buddy {
-     width: unset !important;
-}
-	
-form#ignored {
-      width: unset !important;
-}
-
-/* star rating float left */
-	
-.star_rating {
-     float: left !important;
-}		
-	
-/* index legend */
-	
-.forum_legend dt {
-     float: unset !important; 
-     padding: 5px !important;	 
-}
-	
-.forum_legend dd {	
-     margin-left: 55px !important;
-     margin-top: -35px !important;	 
-}	
-	
-/* ucp avatar border */
-	
-.usercp_container {
-     width: 101px;
-}
-
-/* footer links */ 
-	
-#footer .upper ul.bottom_links {
-     float: unset !important;
-     display: inline-grid !important;	
-}
-	
-/* tcat tweaks */
-
-/* overall tcat display */
-	
-.tcat {
-     display: none !important; 
-}
-
-/* UserCP & ModCP nav tcat display */
-	
-.cpshow {
-     display: block !important; 
-}
-	
-/* Search Results check tcat display */
-	
-.srcshow {
-     display: block !important; 
-}	
-	
-/* whosonline tcat  display */	
-	
-.wolshow {
-     display: block !important; 
-}
-	
-/* cal event tcat display */
-	
-.tcalshow {
-     display: flow !important; 
-}
-	
-
-/* thread & posts span for mobile */
-	
-.threads_show, .posts_show {
-     display: inline-block !important; 	
-}
-	
-/* replies & views span for mobile */
-	
-.replies_show, .views_show {
-     display: inline-block !important; 	
-}
-
-/* thread & author span for mobile */
-	
-.thread_show, .author_show {
-     display: inline-block !important; 	
-}
-
-/* folder & post icon span for mobile */
-	
-.folder_show, .post_icon_show {
-     display: inline-block !important; 	
-}
-	
-/* last post span for mobile */
-	
-.last_post_show {
-     display: inline-block !important; 	
-}
-
-/* ucp span for mobile */
-	
-.ucp_show {
-     display: inline-block !important; 	
-}
-
-/* mcp span for mobile */
-	
-.mcp_show {
-     display: inline-block !important; 	
-}
-
-/* ucpcheck span for mobile */
-	
-.ucpcheck_show {
-     display: flow !important; 	
-}
-
-/* mcpcheck span for mobile */
-	
-.mcpcheck_show {
-     display: flow !important; 	
-}
-	
-/* rating span for mobile */
-	
-.rating_show {
-     display: block !important; 	
-}
-	
-}
-
-@media (max-width:768px) {
-	
-/* Postbit button scaling */
-
-.post_controls {
-     text-align: center;
-}
-
-.postbit_buttons a span {
-     font-size: 0px;
-}
-
-.postbit_buttons a span:before {
-     margin: 0;
-}
-
-.postbit_buttons > a:link, .postbit_buttons > a:hover, .postbit_buttons > a:visited, .postbit_buttons > a:active {
-     padding: 3px 7px;
-}
-
-/* toplinks tweak */
-	
-#logo ul.top_links {	
-     text-align: center !important;
-     display: flow !important;
-}
-
-}
-
-@media (max-width:360px) {
-		
-/* select tweaks */
-	
-html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > div#s2id_to.select2-container.select2-container-multi > ul.select2-choices {
-     width: 105px !important;
-}
-
-html > body > div#select2-drop.select2-drop.select2-drop-multi.select2-display-none.select2-drop-active {
-     width: 112px !important;	
-}	
-
-.select2-container, .select2-drop, .select2-search, .select2-search input {
-     width: 115px !important;
-}
-
-/* first */
-
-select {
-     display: block !important;
-     max-width: 180px !important;
-}
-	
-}
-
-@media (max-width:375px) {
-
-/* wrapper tweak */
-	
-.wrapper {
-     width: unset !important;
-     margin: unset !important;
-}
-	
-}
-
-@media (min-width:375px)  {
-	
-/* select tweaks */
-	
-html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > div#s2id_to.select2-container.select2-container-multi > ul.select2-choices {
-     width: 120px !important;
-}
-
-html > body > div#select2-drop.select2-drop.select2-drop-multi.select2-display-none.select2-drop-active {
-     width: 127px !important;	
-}	
-
-.select2-container, .select2-drop, .select2-search, .select2-search input {
-     width: 130px !important;
-}
-
-/* second */
-
-select {
-     display: block !important;
-     max-width: 190px !important;
-}
-	
-}
-
-@media (min-width:414px) {
-	
-/* select tweaks */
-	
-html > body > div#container > div#content > div.wrapper > form > table > tbody > tr > td > table.tborder > tbody > tr > td.trow1 > div#s2id_to.select2-container.select2-container-multi > ul.select2-choices {
-     width: 159px !important;
-}
-
-html > body > div#select2-drop.select2-drop.select2-drop-multi.select2-display-none.select2-drop-active {
-     width: 166px !important;	
-}	
-
-.select2-container, .select2-drop, .select2-search, .select2-search input {
-     width: 167px !important;
-}
-
-/* last */
-
-select {
-     display: block !important;
-     max-width: 200px !important;
-}
-	
-}
-
-@media (min-width:868px) {
-	
-/* slhide span search for mobile */
-	
-.slhide {
-     display: none !important;
-}	
-			
-/* mlhide span for mobile */
-	
-.mlhide {
-     display: none !important;
-}
-	
-/* sthide span for mobile */
-	
-.sthide {
-     display: none !important;
-}
-	
-/* final */
-
-select {
-     display: unset !important;
-}
-	
-}
-
-/* portal tborder */
-
-.tborder_portal {
-	background: #282828;
-	width: 100%;
-	margin: auto auto;
-	border: 1px solid #282828;
-	padding: 1px;
-}
-
-/* end */
-
-/* start */
-
-/* Basic Calendar Responsiveness Tutorial by: V */
-
-@media (max-width:768px) {
-
-.weekday_day_name strong {
-    display: none;
-}
-
-.calendar .tcat[width*="1"] {
-    padding: 1px;
-}
-
-/* English */
-
-[title="Sunday"]:after {
-    content: 'Sun';
-}
-
-[title="Monday"]:after {
-    content: 'Mon';
-}
-
-[title="Tuesday"]:after {
-    content: 'Tue';
-}
-
-[title="Wednesday"]:after {
-    content: 'Wed';
-}
-
-[title="Thursday"]:after {
-    content: 'Thu';
-}
-
-[title="Friday"]:after {
-    content: 'Fri';
-}
-
-[title="Saturday"]:after {
-    content: 'Sat';
-}
-
-/* French */
-
-[title="Dimanche"]:after {
-    content: 'Dim';
-}
-
-[title="Lundi"]:after {
-    content: 'Lun';
-}
-
-[title="Mardi"]:after {
-    content: 'Mar';
-}
-
-[title="Mercredi"]:after {
-    content: 'Mer';
-}
-
-[title="Jeudi"]:after {
-    content: 'Jeu';
-}
-
-[title="Vendredi"]:after {
-    content: 'Ven';
-}
-
-[title="Samedi"]:after {
-    content: 'Sam';
-}
-
-/* Spanish */
-
-[title="Domingo"]:after {
-    content: 'Dom';
-}
-
-[title="Lunes"]:after {
-    content: 'Lun';
-}
-
-[title="Martes"]:after {
-    content: 'Mar';
-}
-
-[title="Miércoles"]:after {
-    content: 'Mié';
-}
-
-[title="Jueves"]:after {
-    content: 'Jue';
-}
-
-[title="Viernes"]:after {
-    content: 'Vie';
-}
-
-[title="Sábado"]:after {
-    content: 'Sáb';
-}
-
-/* Italian */
-
-[title="Domenica"]:after {
-    content: 'Dom';
-}
-
-[title="Lunedì"]:after {
-    content: 'Lun';
-}
-
-[title="Martedì"]:after {
-    content: 'Mar';
-}
-
-[title="Mercoledì"]:after {
-    content: 'Merc';
-}
-
-[title="Giovedì"]:after {
-    content: 'Gio';
-}
-
-[title="Venerdì"]:after {
-    content: 'Ven';
-}
-
-[title="Sabato"]:after {
-    content: 'Sab';
-}
-
-/* add your additional langs here */
-
-
-.weekday_day_height {
-    height: 0px;
-}
-}
-
-@media (min-width:768px) {
-.weekday_day_height {
-    height: 100px;  
-}
-}
-
-@media (max-width:800px)  {
-.weekday_day_height {
-    height: 60px;  
-}
-}
-
-@media (max-width:600px)  {
-.weekday_day_height {
-    height: 50px;  
-}
-}
-
-@media (max-width:480px) {
-.weekday_day_height {
-    height: 40px;  
-}
-}
-
-@media (max-width:320px) {
-.weekday_day_height {
-    height: 30px;  
-}
-}	
-/* end */
-
-/* Tweak for Poll */
-@media (max-width: 868px) {
-    table {
-        table-layout: auto !important;
-    }
-    colgroup > col {
-        width: 100% !important;
-    }
-}		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_earth.css" attachedto="earth" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_earth.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #6d5545;
-}
-
-input[type=checkbox]:checked:before {
-    color: #6d5545;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #6d5545;
-	-webkit-box-shadow: inset 0 1px 1px rgb(109,85,69), 0 0 8px rgba(109,85,69, 0.8);
-	box-shadow: inset 0 1px 1px rgba(109,85,69, 0.8), 0 0 8px rgba(109,85,69, 0.8);
-}
-
-input.login {
-	border: 5px solid #6d5545;
-
-}
-
-input.login:hover {
-	background: #6d5545;
-}
-
-i.lostpwd {
-   color: #6d5545;
-}
-
-i.printer {
-	color: #6d5545;
-}
-
-i.sendto {
-	color: #6d5545;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #6d5545;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #6d5545  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #6d5545  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #6d5545  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #6d5545  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #6d5545  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #6d5545  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #6d5545  !important;
-}
-
-.usercp_nav_item::before {
-	color: #6d5545  !important;
-}
-
-.modcp_nav_item:before{
-    color: #6d5545  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #6d5545  !important;
-}
-
-i.panel-modcp {
-	color: #6d5545  !important;
-}
-
-i.panel-admincp {
-	color: #6d5545  !important;
-}
-
-.sharethread a:link {
-	color: #6d5545 !important;
-}
-
-.sharethread a:visited {
-	color: #6d5545 !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #4a3a2e !important;
-}
-
-.progress {
-	background: #4a3a2e  url('themes/FA6Dark/colors/earth_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #6d5545 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #6d5545 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #6d5545;
-}
-
-#logo {
-	background: #4a3a2e url(themes/FA6Dark/colors/earth_header.png) top left repeat-x;
-	border-bottom: 1px solid #31261e;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #4a3b2f url(themes/FA6Dark/colors/earth_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #4a3b2f;
-}
-
-.forum_on {
-color: #4a3b2f;
-}
-
-.subforum_minion {
-	color: #4a3b2f;
-}
-
-.thead {
-	background: #4a3b2f url(themes/FA6Dark/colors/earth_thead.png) top left repeat-x;
-	border-bottom: 1px solid #31261e;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #31261e;
-}
-
-.popup_menu .popup_item:hover {
-	background: #6d5545;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #6d5545;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #6d5545;
-	color: #fff;
-	border-color: #31261e;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: showthread.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-ul.thread_tools,
-ul.thread_tools li {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-ul.thread_tools li {
-	padding-left: 0;
-	padding-bottom: 4px;
-	margin-bottom: 3px;
-	font-size: 11px;
-}
-
-ul.thread_tools li.printable:after {
-	font-family: "Font Awesome 6 Free";
-	font-size: 14px;
-	color: #007FC6;
-	content: "\f02f";
-	float: left;
-	position: relative;
-	z-index: 0;
-	padding-right: 5px;
-	font-weight: 900;
-}
-
-ul.thread_tools li.sendthread:after {
-	font-family: "Font Awesome 6 Free";
-	font-size: 14px;
-	color: #007FC6;
-	content: "\f0e0";
-	position: relative;
-	z-index: 0;
-	float: left;
-	padding-right: 5px;
-	font-weight: 900;
-}
-
-ul.thread_tools li.subscription_add:after {
-	font-family: "Font Awesome 6 Free";
-	font-size: 14px;
-	color: #007FC6;
-	content: "\f067";
-	position: relative;
-	z-index: 0;
-	float: left;
-	padding-right: 5px;
-	font-weight: 900;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	font-family: "Font Awesome 6 Free";
-	font-size: 14px;
-	color: #007FC6;
-	content: "\f068";
-	position: relative;
-	z-index: 0;
-	float: left;
-	padding-right: 5px;
-	font-weight: 900;
-}
-
-ul.thread_tools li.poll:after {
-	font-family: "Font Awesome 6 Free";
-	font-size: 14px;
-	color: #007FC6;
-	content: "\f080";
-	position: relative;
-	z-index: 0;
-	float: left;
-	padding-right: 5px;
-	font-weight: 900;
-}
-
-.showthread_spinner {
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-	padding: 20px;
-	width: 100%;
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: star_rating.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Pure CSS & FA 6 Star Rating By Johnny S & Vintagedaddyo **/
-
- .star_rating_container {
-     display: inline-block;
-     vertical-align: middle;
-     margin-right: 6px;
-     float: right;
-     margin-top: 6px;
-}
- .star_rating {
-     unicode-bidi: bidi-override;
-     direction: ltr;
-     list-style:none outside none;
-     margin: 0;
-     padding: 0;
-}
- .star_rating, .star_rating .current_rating {
-     vertical-align: middle;
-}
- td .star_rating {
-     margin-left: 0 auto;
-     width: 120px;
-     position: relative;
-     left: -13px;
-}
- .star_rating li {
-     margin-left: 5px;
-     float: right;
-     unicode-bidi: bidi-override;
-}
- .star_rating li a {
-     color: #b9b9b9;
-     text-decoration: none;
-}
- .star_rating li a {
-     font-size: 0px;
-}
- .star_rating li a:before {
-     font-family: "Font Awesome 6 Free";
-     font-weight: 900;
-     content: "\f005";
-     font-size: 14px;
-}
- .star_rating_notrated li:hover a, .star_rating_notrated li:hover ~ li a {
-     color: #A0A0A0 !important;
-     cursor: pointer;
-}
- li.current_rating[style*="20"] ~ li a.one_star, li.current_rating[style*="40"] ~ li:nth-child(n+5) a, li.current_rating[style*="60"] ~ li:nth-child(n+4) a, li.current_rating[style*="80"] ~ li:nth-child(n+3) a, li[style*="100"]~ li:nth-child(n+2) a {
-     color: #eab71f;
-}
- .star_rating .current_rating {
-     unicode-bidi: bidi-override;
-     direction: rtl;
-     display: none;
-     float: left;
-     text-align: right;
-     position: relative;
-     top: 1px;
-     right: 3px;
-}
- .inline_rating {
-     float: left;
-     vertical-align: middle;
-     padding-right: 5px;
-}
- .star_rating_success, .success_message {
-     color: #00b200;
-     font-weight: bold;
-     font-size: 10px;
-     margin-bottom: 10px;
-}
- td[id*="rating_table"] {
-     text-align: center;
-     margin:0 auto;
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: thread_status.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-.thread_status {
-    display: inline-block;
-}
-
-.thread_status.dot_folder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #017DCC;
-    content: "\f111";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_folder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.dot_hotfolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #FA6A6A;
-    content: "\f111";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_hotfolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.dot_hotclosefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #FA6A6A;
-    content: "f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_hotclosefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.dot_closefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #FFD700;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_closefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.dot_newfolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #FFD700;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_newfolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.dot_newhotfolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #FF0000;
-    content: "\f111";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_newhotfolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.dot_newhotclosefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #FF0000;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_newhotclosefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;
-}
-
-.thread_status.dot_newclosefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #FFD700;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.dot_newclosefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.folder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #C6C6C6;
-    content: "\f111";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.folder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.hotfolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #FA6A6A;
-    content: "\f111";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.hotfolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.hotclosefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #FA6A6A;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.hotclosefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.closefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #333;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.closefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.movefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #FFD700;
-    content: "\f111";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.movefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.newfolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #BDE1A0;
-    content: "\f111";
-    position: absolute;
-    z-index: 1; 
-    font-weight: 900;    
-}
-
-.thread_status.newfolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.newhotfolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 8px;
-    color: #FF0000;
-    content: "\f111";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.newhotfolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.newhotclosefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #FF0000;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.newhotclosefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-
-.thread_status.newclosefolder:before {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #AEAEAE;
-    content: "\f023";
-    position: absolute;
-    z-index: 1;
-    font-weight: 900;    
-}
-
-.thread_status.newclosefolder:after {
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: #fff;
-    content: "\f15c";
-    position: relative;
-    z-index: 0;
-    background-color: #333;
-    border: #333 1px solid;
-    font-weight: 900;    
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: usercp.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-.cp_options td:first-child{
-      width:230px;
-}
-
-.usercp_options{
-      margin:0;
-      padding:0;
-      list-style:none outside none;
-}
-
-.usercp_options>li{
-      margin:0;
-      padding:4px 0px;
-}
-
-.usercp_options>li>span{
-      display:inline-block;
-      text-align:right;
-}
-
-.usercp_nav_item{
-      display:block;
-}
-
-.usercp_nav_item a {
-	color:#0072BC;
-}
-
-.usercp_nav_item:before{
-      font-size:16px;
-      font-family:"Font Awesome 6 Free";
-	  font-weight: 900;
-      color: #0072BC;
-      width:28px;
-      margin-right:3px;
-      text-align:center;
-      display:inline-block;
-}
-
-.usercp_nav_composepm:before{
-      content:"\f3e5";
-}
-
-.usercp_nav_pmfolder:before{
-      content:"\f07c";
-}
-
-.usercp_nav_sub_pmfolder:before{
-      content:"\f07b";
-}
-
-.usercp_nav_trash_pmfolder:before{
-      content:"\f2ed";
-}
-
-.usercp_nav_pmtracking:before{
-      content:"\f024";
-}
-
-.usercp_nav_pmfolders:before{
-      content:"\f07b";
-}
-
-.usercp_nav_profile:before{
-      content:"\f007";
-}
-
-.usercp_nav_email:before{
-      content:"\f0e0";
-}
-
-.usercp_nav_password:before{
-      content:"\f084";
-}
-
-.usercp_nav_username:before{
-      content:"\f111";
-}
-
-.usercp_nav_editsig:before{
-      content:"\f303";
-}
-
-.usercp_nav_avatar:before{
-      content:"\f03e";
-}
-
-.usercp_nav_options:before{
-      content:"\f085";
-}
-
-.usercp_nav_usergroups:before{
-      content:"\f0c0";
-}
-
-.usercp_nav_editlists:before{
-      content:"\f004";
-}
-
-.usercp_nav_attachments:before{
-      content:"\f0c6";
-}
-
-.usercp_nav_drafts:before{
-      content:"\f303";
-}
-
-.usercp_nav_subscriptions:before{
-      content:"\f02e";
-}
-
-.usercp_nav_fsubscriptions:before{
-      content:"\f03a";
-}
-
-.usercp_nav_notepad:before{
-      content:"\f02d";
-}
-
-.usercp_nav_viewprofile:before{
-      content:"\f007";
-}
-
-.usercp_nav_home:before{
-      content:"\f015";
-}
-
-.usercp_nav_status:before{
-      content:"\f118";
-}
-
-.usercp_nav_myalerts:before{
-      content:"\f0f3";
-}
-
-.usercp_nav_myalerts_delete_all:before{
-      content:"\f058";
-}
-
-.usercp_nav_myalerts_delete_read:before{
-      content:"\f05c";
-}
-
-.usercp_nav_award:before{
-      content:"\f091";
-}
-
-.usercp_notepad{
-      width:99%;
-}
-
-#usercpalerts_e td[class^="trow"],#usercppms_e td[class^="trow"],#usercpprofile_e td[class^="trow"],#usercpmisc_e td[class^="trow"]{
-      border:none;
-      padding:0px;
-}
-
-.pagination{
-      padding:3px 0px;
-}
-
-.usercp_notepad{
-      width:99%;
-}
-
-.usercp_container{
-      margin:5px;
-      padding:8px;
-}
-
-td[class^=trow]{
-      border:none;
-}
-
-.pmspace {
-	float: right;
-	margin: -3px 5px;
-}
-
-.pmspace_container {
-	background: #fff;
-	border: 1px solid #ccc;
-	width: 100px;
-	display: inline-block;
-}
-
-.pmspace_used {
-	display: inline-block;
-	color: #fff;
-	margin: -1px;
-}
-
-.pmspace_used.low {
-	border: 1px solid #0c5a01;
-	background: #167203;
-}
-
-.pmspace_used.medium {
-	background: #ff862b;
-	border: 1px solid #d7611e;
-}
-
-.pmspace_used.high {
-	background: #e73c3c;
-	border: 1px solid #c00;
-}
-
-.pmspace_unused {
-	display: inline-block;
-}
-
-.pmspace_text {
-	padding: 1px 5px;
-	display: inline-block;
-}
-
-.new_pm {
-	font-weight: bold;
-}
-
-/** FA PM Icons **/
-
-.x_new_pm:before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f0e0";
-    font-size: 16px;
-}
-
-.x_old_pm:before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f2b6";
-    font-size: 16px;
-}
-
-.x_fw_pm:before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f2b6";
-    position: absolute;
-    font-size: 16px;
-}
-
-.x_fw_pm:after {
-    font-family: "Font Awesome 6 Free";
-    content: "\f30b";
-    position: relative;
-    top: 11px;
-    left: 5px;
-    color: #5b94c5;
-    font-size: 16px;
-	font-weight: 900;
-}
-
-.x_re_pm:before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f2b6";
-    position: absolute;
-    font-size: 16px;
-}
-
-.x_re_pm:after {
-    font-family: "Font Awesome 6 Free";
-    content: "\f30a";
-    position: relative;
-    top: 11px;
-    right: 5px;
-    color: #663096;
-    font-size: 16px;
-	font-weight: 900;
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: modcp.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-.modcp_nav_item:before{
-      font-size:16px;
-      font-family:"Font Awesome 6 Free";
-	  font-weight: 900;
-      color: #0072BC;
-      width:28px;
-      margin-right:3px;
-      text-align:center;
-      display:inline-block;
-}
-
-.modcp_nav_home:before{
-      content:"\f015";
-}
-
-.modcp_nav_announcements:before {
-    content:"\f0f3"
-}
-
-.modcp_nav_reports:before {
-    content: "\f071";
-}
-
-.modcp_nav_modqueue:before {
-    content:"\f02d"
-}
-
-.modcp_nav_modlogs:before {
-    content: "\f109";
-}
-
-.modcp_nav_editprofile:before {
-    content: "\f007";
-}
-
-.modcp_nav_banning:before {
-    content: "\f023";
-}
-
-.modcp_nav_warninglogs:before {
-    content: "\f06e";
-}
-
-.modcp_nav_ipsearch:before {
-    content: "\f002";
-}
-
-.modqueue_message {
-	overflow: auto;
-	max-height: 250px;
-}
-
-.modqueue_controls {
-	width: 270px;
-	float: right;
-	text-align: center;
-	border: 1px solid #ccc;
-	background: #fff;
-	padding: 6px;
-	font-weight: bold;
-}
-
-.modqueue_controls label {
-	margin-right: 8px;
-}
-
-.label_radio_ignore,
-.label_radio_delete,
-.label_radio_approve {
-	font-weight: bold;
-}
-
-.modqueue_meta {
-	color: #444;
-	font-size: 95%;
-	margin-bottom: 8px;
-}
-
-.modqueue_mass {
-	list-style: none;
-	margin: 0;
-	width: 150px;
-	padding: 0;
-}
-
-.modqueue_mass li {
-	margin-bottom: 4px;
-	padding: 0;
-}
-
-.modqueue_mass li a {
-	display: block;
-	padding: 4px;
-	border: 1px solid transparent;
-}
-
-.modqueue_mass li a:hover {
-	background: #efefef;
-	border: 1px solid #ccc;
-	text-decoration: none;
-}
-
-/** Modcp Announcement active/expired **/
-
-.mcp_announceicon {
-	height: 16px; 
-	width: 16px; 
-	display: inline-block;  
-	vertical-align: middle; 
-}
-
-.mcp_announceicon_on {
-    background-image: url('themes/FA6Dark/modcp/announcement/announce_on.png'); 
-}
-
-.mcp_announceicon_off {
-	background-image: url('themes/FA6Dark/modcp/announcement/announce_off.png'); 
-}				
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_sun.css" attachedto="sun" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_calm.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #ffdd4d;
-}
-
-input[type=checkbox]:checked:before {
-    color: #ffdd4d;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #ffdd4d;
-	-webkit-box-shadow: inset 0 1px 1px rgb(255,221,77), 0 0 8px rgba(255,221,77, 0.8);
-	box-shadow: inset 0 1px 1px rgba(255,221,77, 0.8), 0 0 8px rgba(255,221,77, 0.8);
-}
-
-input.login {
-	border: 5px solid #ffdd4d;
-
-}
-
-input.login:hover {
-	background: #ffdd4d;
-}
-
-i.lostpwd {
-   color: #ffdd4d;
-}
-
-i.printer {
-	color: #ffdd4d;
-}
-
-i.sendto {
-	color: #ffdd4d;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #ffdd4d;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #ffdd4d  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #ffdd4d  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #ffdd4d  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #ffdd4d  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #ffdd4d  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #ffdd4d  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #ffdd4d  !important;
-}
-
-.usercp_nav_item::before {
-	color: #ffdd4d  !important;
-}
-
-.modcp_nav_item:before{
-    color: #ffdd4d  !important;
-}
-
-i.toplinks-portal {
-	color: #555 !important;
-}
-
-i.toplinks-search {
-	color: #555 !important;
-}
-
-i.toplinks-memberlist {
-	color: #555 !important;
-}
-
-i.toplinks-calendar {
-	color: #555 !important;
-}
-
-i.toplinks-help {
-	color: #555 !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #ffdd4d  !important;
-}
-
-i.panel-modcp {
-	color: #ffdd4d  !important;
-}
-
-i.panel-admincp {
-	color: #ffdd4d  !important;
-}
-
-.sharethread a:link {
-	color: #555 !important;
-}
-.sharethread a:visited {
-	color: #555 !important;
-}
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #ffdd4d !important;
-}
-
-.progress {
-	background: #ffdd4d url('themes/FA6Dark/colors/sun_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #555 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #555 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #333 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #555;
-}
-
-#logo {
-	background: #ffdd4d url(themes/FA6Dark/colors/sun_header.png) top left repeat-x;
-	border-bottom: 1px solid #111;
-}
-
-#header ul.menu li a {
-	color: #555;
-}
-
-#panel input.button {
-	background: #ffdd4d url(themes/FA6Dark/colors/sun_thead.png) top left repeat-x;
-	color: #000;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #ffdd4d;
-}
-
-.forum_on {
-color: #ffdd4d;
-}
-
-.subforum_minion {
-	color: #ffdd4d;
-}
-
-.thead {
-	background: #ffdd4d url(themes/FA6Dark/colors/sun_thead.png) top left repeat-x;
-	border-bottom: 1px solid #ffaf1a;
-	color: #000;
-}
-
-.thead a:link,
-.thead a:visited,
-.thead a:hover,
-.thead a:active {
-	color: #000;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #ffaf1a;
-}
-
-.popup_menu .popup_item:hover {
-	background: #ffea9c;
-	color: #000;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #ffea9c;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #ffea9c;
-	color: #000;
-	border-color: #ffaf1a;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_twilight.css" attachedto="twilight" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_twilight.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #A0A0A0;
-}
-
-input[type=checkbox]:checked:before {
-    color: #A0A0A0;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #273a46;
-	-webkit-box-shadow: inset 0 1px 1px rgb(39,58,70), 0 0 8px rgba(39,58,70, 0.8);
-	box-shadow: inset 0 1px 1px rgba(39,58,70, 0.8), 0 0 8px rgba(39,58,70, 0.8);
-}
-
-input.login {
-	border: 5px solid #273a46;
-
-}
-
-input.login:hover {
-	background: #273a46;
-}
-
-i.lostpwd {
-   color: #273a46;
-}
-
-i.printer {
-	color: #fff;
-}
-
-i.sendto {
-	color: #fff;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #A0A0A0;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #A0A0A0  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #A0A0A0  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #A0A0A0  !important;
-}
-
-.usercp_nav_item::before {
-	color: #A0A0A0  !important;
-}
-
-.modcp_nav_item:before{
-    color: #A0A0A0  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #A0A0A0  !important;
-}
-
-i.panel-modcp {
-	color: #A0A0A0  !important;
-}
-
-i.panel-admincp {
-	color: #A0A0A0  !important;
-}
-
-.sharethread a:link {
-	color: #426276 !important;
-}
-
-.sharethread a:visited {
-	color: #426276 !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #273a46 !important;
-}
-
-.progress {
-	background: #273a46 url('themes/FA6Dark/colors/twilight_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #426276 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #426276 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #426276;
-}
-
-#logo {
-	background: #273a46 url(themes/FA6Dark/colors/twilight_header.png) top left repeat-x;
-	border-bottom: 1px solid #1d2b34;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #273a46 url(themes/FA6Dark/colors/twilight_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #273a46;
-}
-
-.forum_on {
-color: #A0A0A0;
-}
-
-.subforum_minion {
-	color: #A0A0A0;
-}
-
-.thead {
-	background: #273a46 url(themes/FA6Dark/colors/twilight_thead.png) top left repeat-x;
-	border-bottom: 1px solid #1d2b34;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #1d2b34;
-}
-
-.popup_menu .popup_item:hover {
-	background: #426276;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #426276;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #426276;
-	color: #fff;
-	border-color: #1d2b34;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_water.css" attachedto="water" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_water.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #1e6365;
-}
-
-input[type=checkbox]:checked:before {
-    color: #1e6365;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #1e6365;
-	-webkit-box-shadow: inset 0 1px 1px rgb(30,99,101), 0 0 8px rgba(30,99,101, 0.8);
-	box-shadow: inset 0 1px 1px rgba(30,99,101, 0.8), 0 0 8px rgba(30,99,101, 0.8);
-}
-
-input.login {
-	border: 5px solid #1e6365;
-
-}
-
-input.login:hover {
-	background: #1e6365;
-}
-
-i.lostpwd {
-   color: #1e6365;
-}
-
-i.printer {
-	color: #1e6365;
-}
-
-i.sendto {
-	color: #1e6365;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #1e6365;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #1e6365  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #1e6365  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #1e6365  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #1e6365  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #1e6365  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #1e6365  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #1e6365  !important;
-}
-
-.usercp_nav_item::before {
-	color: #1e6365  !important;
-}
-
-.modcp_nav_item:before{
-    color: #1e6365  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #1e6365  !important;
-}
-
-i.panel-modcp {
-	color: #1e6365  !important;
-}
-
-i.panel-admincp {
-	color: #1e6365  !important;
-}
-
-.sharethread a:link {
-	color: #2d9595 !important;
-}
-
-.sharethread a:visited {
-	color: #2d9595 !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #1e6365 !important;
-}
-
-.progress {
-	background: #1e6365 url('themes/FA6Dark/colors/water_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #2d9595 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #2d9595 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #2d9595;
-}
-
-#logo {
-	background: #1e6365 url(themes/FA6Dark/colors/water_header.png) top left repeat-x;
-	border-bottom: 1px solid #133f41;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #1e6365 url(themes/FA6Dark/colors/water_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #1e6365;
-}
-
-.forum_on {
-color: #1e6365;
-}
-
-.subforum_minion {
-	color: #1e6365;
-}
-
-.thead {
-	background: #1e6365 url(themes/FA6Dark/colors/water_thead.png) top left repeat-x;
-	border-bottom: 1px solid #133f41;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #133f41;
-}
-
-.popup_menu .popup_item:hover {
-	background: #2d9595;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #2d9595;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #2d9595;
-	color: #fff;
-	border-color: #133f41;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_flame.css" attachedto="flame" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_flame.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #A0A0A0;
-}
-
-input[type=checkbox]:checked:before {
-    color: #A0A0A0;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #750000;
-	-webkit-box-shadow: inset 0 1px 1px rgb(117,0,0), 0 0 8px rgba(117,0,0, 0.8);
-	box-shadow: inset 0 1px 1px rgba(117,0,0, 0.8), 0 0 8px rgba(117,0,0, 0.8);
-}
-
-input.login {
-	border: 5px solid #750000;
-
-}
-
-input.login:hover {
-	background: #750000;
-}
-
-i.lostpwd {
-   color: #750000;
-}
-
-i.printer {
-	color: #750000;
-}
-
-i.sendto {
-	color: #750000;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #A0A0A0;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #A0A0A0  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #A0A0A0  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #A0A0A0  !important;
-}
-
-.usercp_nav_item::before {
-	color: #A0A0A0  !important;
-}
-
-.modcp_nav_item:before{
-    color: #A0A0A0  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #A0A0A0  !important;
-}
-
-i.panel-modcp {
-	color: #A0A0A0  !important;
-}
-
-i.panel-admincp {
-	color: #A0A0A0  !important;
-}
-
-.sharethread a:link {
-	color: #a20000 !important;
-}
-.sharethread a:visited {
-	color: #a20000 !important;
-}
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #750000  !important;
-}
-
-.progress {
-	background: #750000 url('themes/FA6Dark/colors/flame_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #a20000 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #a20000 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #a20000;
-}
-
-#logo {
-	background: #750000 url(themes/FA6Dark/colors/flame_header.png) top left repeat-x;
-	border-bottom: 1px solid #550000;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #750000 url(themes/FA6Dark/colors/flame_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #750000;
-}
-
-.forum_on {
-color: #750000;
-}
-
-.subforum_minion {
-	color: #750000;
-}
-
-.thead {
-	background: #750000 url(themes/FA6Dark/colors/flame_thead.png) top left repeat-x;
-	border-bottom: 1px solid #550000;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #550000;
-}
-
-.popup_menu .popup_item:hover {
-	background: #a20000;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #a20000;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #a20000;
-	color: #fff;
-	border-color: #550000;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_leaf.css" attachedto="leaf" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_leaf.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #386e21;
-}
-
-input[type=checkbox]:checked:before {
-    color: #386e21;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #386e21;
-	-webkit-box-shadow: inset 0 1px 1px rgb(56,110,33), 0 0 8px rgba(56,110,33, 0.8);
-	box-shadow: inset 0 1px 1px rgba(56,110,33, 0.8), 0 0 8px rgba(56,110,33, 0.8);
-}
-
-input.login {
-	border: 5px solid #386e21;
-
-}
-
-input.login:hover {
-	background: #386e21;
-}
-
-i.lostpwd {
-   color: #386e21;
-}
-
-i.printer {
-	color: #386e21;
-}
-
-i.sendto {
-	color: #386e21;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #386e21;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #386e21  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #386e21  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #386e21  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #386e21  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #386e21  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #386e21  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #386e21  !important;
-}
-
-.usercp_nav_item::before {
-	color: #386e21  !important;
-}
-
-.modcp_nav_item:before{
-    color: #386e21  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #386e21  !important;
-}
-
-i.panel-modcp {
-	color: #386e21  !important;
-}
-
-i.panel-admincp {
-	color: #386e21  !important;
-}
-
-.sharethread a:link {
-	color: #5aaf33 !important;
-}
-
-.sharethread a:visited {
-	color: #5aaf33 !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #386e21  !important;
-}
-
-.progress {
-	background: #386e21 url('themes/FA6Dark/colors/leaf_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #5aaf33 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #5aaf33 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #5aaf33;
-}
-
-#logo {
-	background: #386e21 url(themes/FA6Dark/colors/leaf_header.png) top left repeat-x;
-	border-bottom: 1px solid #234615;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #386e21 url(themes/FA6Dark/colors/leaf_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #386e21;
-}
-
-.forum_on {
-color: #386e21;
-}
-
-.subforum_minion {
-	color: #386e21;
-}
-
-.thead {
-	background: #386e21 url(themes/FA6Dark/colors/leaf_thead.png) top left repeat-x;
-	border-bottom: 1px solid #234615;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #234615;
-}
-
-.popup_menu .popup_item:hover {
-	background: #5aaf33;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #5aaf33;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #5aaf33;
-	color: #fff;
-	border-color: #234615;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_night.css" attachedto="night" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_night.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #A0A0A0;
-}
-
-input[type=checkbox]:checked:before {
-    color: #A0A0A0;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #A0A0A0;
-	-webkit-box-shadow: inset 0 1px 1px rgb(160,160,160), 0 0 8px rgba(160,160,160, 0.8);
-	box-shadow: inset 0 1px 1px rgba(160,160,160, 0.8), 0 0 8px rgba(160,160,160, 0.8);
-}
-
-input.login {
-	border: 5px solid #A0A0A0;
-
-}
-
-input.login:hover {
-	background: #A0A0A0;
-}
-
-i.lostpwd {
-   color: #A0A0A0;
-}
-
-i.printer {
-	color: #fff;
-}
-
-i.sendto {
-	color: #fff;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #A0A0A0;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #A0A0A0  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #A0A0A0  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #A0A0A0  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #A0A0A0  !important;
-}
-
-.usercp_nav_item::before {
-	color: #A0A0A0  !important;
-}
-
-.modcp_nav_item:before{
-    color: #A0A0A0  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #A0A0A0  !important;
-}
-
-i.panel-modcp {
-	color: #A0A0A0  !important;
-}
-
-i.panel-admincp {
-	color: #A0A0A0  !important;
-}
-
-.sharethread a:link {
-	color: #023a61 !important;
-}
-
-.sharethread a:visited {
-	color: #023a61 !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #022338 !important;
-}
-
-.progress {
-	background: #022338 url('themes/FA6Dark/colors/night_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #023a61 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #023a61 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #023a61;
-}
-
-#logo {
-	background: #022338 url(themes/FA6Dark/colors/night_header.png) top left repeat-x;
-	border-bottom: 1px solid #011929;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #022338 url(themes/FA6Dark/colors/night_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #022338;
-}
-
-.forum_on {
-color: #A0A0A0;
-}
-
-.subforum_minion {
-	color: #A0A0A0;
-}
-
-.thead {
-	background: #022338 url(themes/FA6Dark/colors/night_thead.png) top left repeat-x;
-	border-bottom: 1px solid #011929;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #011929;
-}
-
-.popup_menu .popup_item:hover {
-	background: #023a61;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #023a61;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #023a61;
-	color: #fff;
-	border-color: #011929;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_black.css" attachedto="black" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_black.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #A0A0A0;
-}
-
-input[type=checkbox]:checked:before {
-    color: #A0A0A0;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #A0A0A0;
-	-webkit-box-shadow: inset 0 1px 1px rgb(160,160,160), 0 0 8px rgba(160,160,160, 0.8);
-	box-shadow: inset 0 1px 1px rgba(160,160,160, 0.8), 0 0 8px rgba(160,160,160, 0.8);
-}
-
-input.login {
-	border: 5px solid #A0A0A0;
-
-}
-
-input.login:hover {
-	background: #A0A0A0;
-}
-
-i.lostpwd {
-   color: #A0A0A0;
-}
-
-i.printer {
-	color: #fff;
-}
-
-i.sendto {
-	color: #fff;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #A0A0A0;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #A0A0A0 !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #A0A0A0 !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #A0A0A0 !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #A0A0A0 !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #A0A0A0 !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #fff !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #fff !important;
-}
-
-.usercp_nav_item::before {
-	color: #555 !important;
-}
-
-.modcp_nav_item:before{
-    color: #555 !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #555 !important;
-}
-
-i.panel-modcp {
-	color: #555 !important;
-}
-
-i.panel-admincp {
-	color: #555 !important;
-}
-
-.sharethread a:link {
-	color: #555 !important;
-}
-.sharethread a:visited {
-	color: #555 !important;
-}
-.sharethread a:hover,
-.sharethread a:active {
-	color: #fff !important;
-}
-
-.progress_bar {
-	border: 1px solid #202020 !important;
-}
-
-.progress {
-	background: #202020  url('themes/FA6Dark/colors/black_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #555 !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #555 !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #555;
-}
-
-#logo {
-	background: #202020 url(themes/FA6Dark/colors/black_header.png) top left repeat-x;
-	border-bottom: 1px solid #263c30;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-/*
-#panel .upper {
-	background: #dcdbdc url(themes/FA6Dark/colors/black_tcat.png) repeat-x;
-	color: #000;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #bbb;
-}
-
-#panel .upper a:link,
-#panel .upper a:visited,
-#panel .upper a:hover,
-#panel .upper a:active {
-	color: #000;
-}
-
-#panel input.textbox {
-	border-color: #ccc;
-}
-
-#panel input.button {
-	background: #202121 url(themes/FA6Dark/colors/black_thead.png) top left repeat-x;
-	color: #fff;
-	border-color: #000;
-}
-*/
-
-#panel .upper {
-    background: #555;
-    background: -moz-linear-gradient(top, #555 0%, #333 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555), color-stop(100%, #333));
-    background: -webkit-linear-gradient(top, #555 0%, #333 100%);
-    background: -o-linear-gradient(top, #555 0%, #333 100%);
-    background: -ms-linear-gradient(top, #555 0%, #333 100%);
-    background: linear-gradient(top, #555 0%, #333 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#555', endColorstr='#333', GradientType=0 );
-    color: #fff;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    padding: 7px;
-    clear: both; 
-}
-#panel .upper a:link, #panel .upper a:visited, #panel .upper a:hover, #panel .upper a:active {
-    color: #FFF;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #555;
-}
-
-#panel .lower a:hover{
-    color: #555;
-}
-
-.forum_on {
-color: #A0A0A0;
-}
-
-.subforum_minion {
-	color: #A0A0A0;
-}
-
-.thead {
-	background: #202121 url(themes/FA6Dark/colors/black_thead.png) top left repeat-x;
-	border-bottom: 1px solid #000;
-}
-/*
-.tcat {
-	background: #dcdbdc url(themes/FA6Dark/colors/black_tcat.png) repeat-x;
-	color: #000000;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #bbb;
-}
-
-.tcat a:link,
-.tcat a:visited,
-.tcat a:hover,
-.tcat a:active {
-	color: #000000;
-}
-*/
-
-.tcat {
-	font-size: 12px;
-    background: #555;
-    background: -moz-linear-gradient(top, #555 0%, #333 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555), color-stop(100%, #333));
-    background: -webkit-linear-gradient(top, #555 0%, #333 100%);
-    background: -o-linear-gradient(top, #555 0%, #333 100%);
-    background: -ms-linear-gradient(top, #555 0%, #333 100%);
-    background: linear-gradient(top, #555 0%, #333 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#555', endColorstr='#333', GradientType=0 );
-    color: #fff;
-    border-bottom: 1px solid #333;
-    padding: 7px;
-    clear: both;		
-}
-
-.tcat a:link {
-	color: #fff;
-}
-
-.tcat a:visited {
-	color: #fff;
-}
-
-.tcat a:hover,
-.tcat a:active {
-	color: #fff;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #111;
-}
-
-.popup_menu .popup_item:hover {
-	background: #333;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #333;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #333;
-	color: #fff;
-	border-color: #000;
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_calm.css" attachedto="calm" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_calm.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #48715b;
-}
-
-input[type=checkbox]:checked:before {
-    color: #48715b;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #48715b;
-	-webkit-box-shadow: inset 0 1px 1px rgb(72,113,91), 0 0 8px rgba(72,113,91, 0.8);
-	box-shadow: inset 0 1px 1px rgba(72,113,91, 0.8), 0 0 8px rgba(72,113,91, 0.8);
-}
-
-input.login {
-	border: 5px solid #48715b;
-
-}
-
-input.login:hover {
-	background: #48715b;
-}
-
-i.lostpwd {
-   color: #48715b;
-}
-
-i.printer {
-	color: #48715b;
-}
-
-i.sendto {
-	color: #48715b;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #48715b;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #48715b !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #48715b !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #48715b !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #48715b !important;
-}
-
-.usercp_nav_item::before {
-	color: #48715b !important;
-}
-
-.modcp_nav_item:before{
-    color: #48715b !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #48715b !important;
-}
-
-i.panel-modcp {
-	color: #48715b !important;
-}
-
-i.panel-admincp {
-	color: #48715b !important;
-}
-
-.sharethread a:link {
-	color: #48715b !important;
-}
-
-.sharethread a:visited {
-	color: #48715b !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #385947 !important;
-}
-
-.progress {
-	background: #385947  url('themes/FA6Dark/colors/calm_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #48715b !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #48715b !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #48715b;
-}
-
-#logo {
-	background: #385947 url(themes/FA6Dark/colors/calm_header.png) top left repeat-x;
-	border-bottom: 1px solid #263c30;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #385947;
-}
-
-#panel .lower a:hover{
-    color: #385947;
-}
-
-.forum_on {
-color: #385947;
-}
-
-.subforum_minion {
-	color: #385947;
-}
-
-.thead {
-	background: #385947 url(themes/FA6Dark/colors/calm_thead.png) top left repeat-x;
-	color: #ffffff;
-	border-bottom: 1px solid #263c30;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #263c30;
-}
-
-.popup_menu .popup_item:hover {
-	background: #48715b;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #48715b;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #48715b;
-	color: #fff;
-	border-color: #263c30;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="color_dawn.css" attachedto="dawn" version="1839"><![CDATA[/*
- * MyBB: FA6Dark Frontend Theme 
- *
- * File: color_dawn.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-/** Checkboxes **/ 
-
-input[type=checkbox]:after, input[type=radio]:after {
-    color: #202020;
-}
-
-input[type=radio]:checked:after {
-    color: #d56c2c;
-}
-
-input[type=checkbox]:checked:before {
-    color: #d56c2c;
-}
-
-/** Login **/
-
-input#quick_login_username:focus, input#quick_login_password:focus {
-	border-color: #d56c2c;
-	-webkit-box-shadow: inset 0 1px 1px rgb(213,108,44), 0 0 8px rgba(213,108,44, 0.8);
-	box-shadow: inset 0 1px 1px rgba(213,108,44, 0.8), 0 0 8px rgba(213,108,44, 0.8);
-}
-
-input.login {
-	border: 5px solid #d56c2c;
-
-}
-
-input.login:hover {
-	background: #d56c2c;
-}
-
-i.lostpwd {
-   color: #d56c2c;
-}
-
-i.printer {
-	color: #d56c2c;
-}
-
-i.sendto {
-	color: #d56c2c;
-}
-
-.tfoot a:hover, .tfoot a:active {
-	color: #d56c2c;
-	text-decoration: underline;
-}
-
-ul.thread_tools li.printable:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.sendthread:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.subscription_add:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.subscription_remove:after {
-	color: #d56c2c  !important;
-}
-
-ul.thread_tools li.poll:after {
-	color: #d56c2c  !important;
-}
-
-.trow1 a:hover, .trow1 a:active {
-	color: #d56c2c  !important;
-}
-
-.trow2 a:hover, .trow2 a:active {
-	color: #d56c2c  !important;
-}
-
-.usercp_nav_item::before {
-	color: #d56c2c  !important;
-}
-
-.modcp_nav_item:before{
-    color: #d56c2c  !important;
-}
-
-i.toplinks-portal {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-search {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-memberlist {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-calendar {
-	color: #FFFFFF !important;
-}
-
-i.toplinks-help {
-	color: #FFFFFF !important;
-}
-
-i.panel-register {
-	color: #98C78B !important;
-}
-
-i.panel-login {
-	color: #C49A38 !important;
-}
-
-i.panel-logout {
-	color: #98C78B !important;
-}
-
-i.panel-usercp {
-	color: #d56c2c  !important;
-}
-
-i.panel-modcp {
-	color: #d56c2c  !important;
-}
-
-i.panel-admincp {
-	color: #d56c2c  !important;
-}
-
-.sharethread a:link {
-	color: #d56c2c !important;
-}
-
-.sharethread a:visited {
-	color: #d56c2c !important;
-}
-
-.sharethread a:hover,
-.sharethread a:active {
-	color: #333 !important;
-}
-
-.progress_bar {
-	border: 1px solid #d56c2c !important;
-}
-
-.progress {
-	background: #d56c2c  url('themes/FA6Dark/colors/dawn_thead.png') center repeat-x !important;
-}
-
-#backtop a:link {
-	color: #d56c2c !important;
-	text-decoration: none;
-}
-
-#backtop a:visited {
-	color: #d56c2c !important;
-	text-decoration: none;
-}
-
-#backtop a:hover, a:active {
-	color: #A0A0A0 !important;
-	text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #d56c2c;
-}
-
-#logo {
-	background: #d56c2c url(themes/FA6Dark/colors/dawn_header.png) top left repeat-x;
-	border-bottom: 1px solid #011929;
-}
-
-#header ul.menu li a {
-	color: #fff;
-}
-
-#panel input.button {
-	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
-}
-
-#panel .lower ul.user_links li a:hover {
-   color: #d56c2c;
-}
-
-.forum_on {
-color: #d56c2c;
-}
-
-.subforum_minion {
-	color: #d56c2c;
-}
-
-.thead {
-	background: #d56c2c url(themes/FA6Dark/colors/dawn_thead.png) top left repeat-x;
-	border-bottom: 1px solid #9a4e20;
-}
-
-.thead input.textbox,
-.thead select {
-	border: 1px solid #9a4e20;
-}
-
-.popup_menu .popup_item:hover {
-	background: #f2a555;
-	color: #fff;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-    background-color: #f2a555;
-	color: #fff;
-}
-
-.pagination a:hover {
-	background-color: #f2a555;
-	color: #fff;
-	border-color: #9a4e20;
-}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		]]>
 		</stylesheet>
@@ -8373,14 +8392,15 @@ $("#backtop").hide();
 			</form>
 		</td>
 	</tr>]]></template>
-		<template name="forumdisplay_inlinemoderation" version="1821"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1821"></script>
-		<form action="moderation.php" method="post">
+		<template name="forumdisplay_inlinemoderation" version="1839"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1838"></script>
+		<form id="inlinemoderation_options" action="moderation.php" method="post">
 <input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
 <input type="hidden" name="fid" value="{$fid}" />
 <input type="hidden" name="modtype" value="inlinethread" />
 <span class="smalltext"><strong>{$lang->inline_thread_moderation}</strong></span>
 <span class="select-wrap">			
-<select name="action">
+<select name="action" id="inlinemoderation_options_selector">
+	<option value="" style="display: none;" selected="selected">{$lang->select_a_tool}</option>
 	<option value="delayedmoderation">{$lang->delayed_moderation}</option>
 	{$standardthreadtools}
 	{$customthreadtools}
@@ -8394,6 +8414,8 @@ $("#backtop").hide();
 	var all_text = "{$threadcount}";
 	var inlineType = "forum";
 	var inlineId = {$fid};
+	lang.select_tool = "{$lang->inline_no_tool_selected}";
+	lang.selected_nil = "{$lang->inline_no_post_selected}"	
 // -->
 </script>
 <br />]]></template>
@@ -8416,7 +8438,7 @@ $("#backtop").hide();
 	</td>
 {$modbit}
 </tr>]]></template>
-		<template name="forumdisplay_threadlist" version="1827"><![CDATA[<div class="float_left">
+		<template name="forumdisplay_threadlist" version="1839"><![CDATA[<div class="float_left">
 	{$multipage}
 </div>
 <div class="float_right">
@@ -8476,8 +8498,7 @@ $("#backtop").hide();
 	{$searchforum}
 	{$forumjump}
 </div>
-<br class="clear" />
-{$inline_edit_js}]]></template>
+<br class="clear" />]]></template>
 		<template name="forumdisplay_threadlist_prefixes" version="1829"><![CDATA[<span class="select-wrap">
 <select name="prefix">
 <option value="-2"{$default_selected['any']}>{$lang->prefix_any}</option>
@@ -8778,7 +8799,6 @@ $(".forumjump").on('change', function() {
 </table>
 <br />]]></template>
 		<template name="index_logoutlink" version="1819"><![CDATA[<a href="member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}"><i class="fa-solid fa-power-off tfoot-logout"></i> {$lang->index_logout}</a>]]></template>
-		<template name="index_showteamlink" version="1819"><![CDATA[{$show_team_link_separator}<a href="showteam.php"><i class="fa-solid fa-users tfoot-team"></i> {$lang->forumteam}</a>]]></template>
 		<template name="index_statspage" version="1819"><![CDATA[{$stats_page_separator}<a href="stats.php"><i class="fa-solid fa-chart-bar tfoot-stats"></i> {$lang->forumstats}</a>]]></template>
 		<template name="index_whosonline" version="1829"><![CDATA[<tr>
 <td class="tcat wolshow"><span class="smalltext"><strong>{$lang->whos_online}</strong> [<a href="online.php">{$lang->complete_list}</a>]</span></td>
@@ -8939,7 +8959,7 @@ if(use_xmlhttprequest == "1")
 </body>
 </html>]]></template>
 		<template name="memberlist_referrals_bit" version="1829"><![CDATA[<td class="{$alt_bg}" align="center"><span class="smalltext mlhide"><a href="{$sorturl}&amp;sort=referrals&amp;order=descending"><strong>{$lang->referrals}:</strong></a> {$orderarrow['referrals']}</span> {$user['referrals']}</td>]]></template>
-		<template name="memberlist_search" version="1829"><![CDATA[<html>
+		<template name="memberlist_search" version="1839"><![CDATA[<html>
 <head>
 <title>{$mybb->settings['bbname']} - {$lang->search_member_list}</title>
 {$headerinclude}
@@ -8974,7 +8994,6 @@ if(use_xmlhttprequest == "1")
 </tr>
 {$contact_fields['skype']}
 {$contact_fields['google']}
-{$contact_fields['icq']}
 <tr>
 	<td class="tcat" colspan="2"><strong>{$lang->search_options}</strong></td>
 </tr>
@@ -8991,8 +9010,8 @@ if(use_xmlhttprequest == "1")
 			{$referrals_option}
 			</select></span><br />
 		<span class="smalltext">
-		<input type="radio" class="radio" name="order" id="order_asc" value="asc" /> <label for="order_asc">{$lang->order_asc}</label><br />
-		<input type="radio" class="radio" name="order" id="order_desc" value="desc" checked="checked" /> <label for="order_desc">{$lang->order_desc}</label>
+		<input type="radio" class="radio" name="order" id="order_asc" value="ascending" /> <label for="order_asc">{$lang->order_asc}</label><br />
+		<input type="radio" class="radio" name="order" id="order_desc" value="descending" checked="checked" /> <label for="order_desc">{$lang->order_desc}</label>
 		</span>
 	</td>
 </tr>
@@ -9341,7 +9360,7 @@ if(use_xmlhttprequest == "1")
 	{$footer}
 </body>
 </html>]]></template>
-		<template name="modcp_editprofile" version="1822"><![CDATA[<html>
+		<template name="modcp_editprofile" version="1839"><![CDATA[<html>
 <head>
 <title>{$mybb->settings['bbname']} - {$lang->edit_profile}</title>
 {$headerinclude}
@@ -9464,12 +9483,6 @@ if(use_xmlhttprequest == "1")
 								<fieldset class="trow2">
 									<legend><strong>{$lang->additional_contact_details}</strong></legend>
 									<table cellspacing="0" cellpadding="{$theme['tablespace']}">
-										<tr>
-											<td><span class="smalltext">{$lang->icq_number}</span></td>
-										</tr>
-										<tr>
-											<td><input type="text" class="textbox" name="icq" size="25" value="{$user_icq}" /></td>
-										</tr>
 										<tr>
 											<td><span class="smalltext">{$lang->skype_id}</span></td>
 										</tr>
@@ -10589,7 +10602,7 @@ if(use_xmlhttprequest == "1")
 		<template name="search_results_icon" version="1819"><![CDATA[<div class="posticons-icon posticons-icon_{$posticon['iid']}" title="{$posticon['name']}"style="vertical-align: middle;" />
 <i class="fa-solid fa-"></i></div>]]></template>
 		<template name="search_results_inlinemodcol" version="1829"><![CDATA[<td class="tcat srcshow" align="center" width="1"><input type="checkbox" name="allbox" onclick="inlineModeration.checkAll(this);" /></td>]]></template>
-		<template name="search_results_posts_inlinemoderation" version="1821"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1821"></script>
+		<template name="search_results_posts_inlinemoderation" version="1839"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1838"></script>
 <form action="moderation.php" method="post" style="margin-top: 0; margin-bottom: 0;">
 <input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
 <input type="hidden" name="tid" value="0" />
@@ -10641,7 +10654,7 @@ if(use_xmlhttprequest == "1")
 	<td class="{$bgcolor}" style="white-space: nowrap; text-align: center;"><span class="smalltext slhide"><strong><a href="{$sorturl}&amp;sortby=dateline&amp;order=desc">{$lang->posted}:</a> {$orderarrow['dateline']}</strong></span><span class="smalltext">{$posted}</span></td>
 	{$inline_mod_checkbox}
 </tr>]]></template>
-		<template name="search_results_threads_inlinemoderation" version="1821"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1821"></script>
+		<template name="search_results_threads_inlinemoderation" version="1839"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1838"></script>
 		<form action="moderation.php" method="post">
 <input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
 <input type="hidden" name="fid" value="0" />
@@ -10706,7 +10719,7 @@ if(use_xmlhttprequest == "1")
 <td width="5%" class="{$bgcolor}"><span class="smalltext sthide"><strong>{$lang->email}:</strong></span><div class="postbit_buttons">{$emailcode}</div></td>
 <td width="5%" class="{$bgcolor}"><span class="smalltext sthide"><strong>{$lang->pm}:</strong></span><div class="postbit_buttons">{$pmcode}</div></td>
 </tr>]]></template>
-		<template name="showthread_inlinemoderation" version="1821"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1821"></script>
+		<template name="showthread_inlinemoderation" version="1839"><![CDATA[<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1838"></script>
 <form action="moderation.php" method="post" style="margin-top: 0; margin-bottom: 0;" id="inlinemoderation_options">
 <input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
 <input type="hidden" name="tid" value="{$tid}" />
@@ -10714,6 +10727,7 @@ if(use_xmlhttprequest == "1")
 <span class="smalltext"><strong>{$lang->inline_post_moderation}</strong></span>
 <span class="select-wrap">	
 <select name="action" id="inlinemoderation_options_selector">
+	<option value="" style="display: none;" selected="selected">{$lang->select_a_tool}</option>
 {$standardposttools}
 {$customposttools}
 </select></span>
@@ -10727,12 +10741,11 @@ if(use_xmlhttprequest == "1")
 	var inlineType = "thread";
 	var inlineId = {$tid};
 
-	$("#inlinemoderation_options_selector").on('change', function() {
-		$("#inlinemoderation_options").trigger('submit');
-	})
+    lang.select_tool = "{$lang->inline_no_tool_selected}";
+	lang.selected_nil = "{$lang->inline_no_post_selected}";
 // -->
 </script><br />]]></template>
-		<template name="showthread_moderationoptions" version="1820"><![CDATA[{$inlinemod}
+		<template name="showthread_moderationoptions" version="1839"><![CDATA[{$inlinemod}
 <form action="moderation.php" method="post" style="margin-top: 0; margin-bottom: 0;" id="moderator_options">
 	<input type="hidden" name="modtype" value="thread" />
 	<input type="hidden" name="tid" value="{$tid}" />
@@ -10741,20 +10754,14 @@ if(use_xmlhttprequest == "1")
 	<strong>{$lang->moderation_options}</strong></span>
 	<span class="select-wrap">
 	<select name="action" id="moderator_options_selector">
+		<option value="" style="display: none;" selected="selected">{$lang->select_a_tool}</option>
 		<option value="delayedmoderation">{$lang->delayed_moderation}</option>
 		{$standardthreadtools}
 		{$customthreadtools}
 	</select></span>
 	{$gobutton}
 </form>
-<br />
-<script type="text/javascript">
-<!--
-	$("#moderator_options_selector").change(function() {
-		$("#moderator_options").submit();
-	})
-//-->
-</script>]]></template>
+<br />]]></template>
 		<template name="showthread_poll_resultbit" version="1819"><![CDATA[<tr>
 <td class="{$optionbg}" align="right" width="400">{$option}{$votestar}</td>
 <td class="{$optionbg}" width="300">
